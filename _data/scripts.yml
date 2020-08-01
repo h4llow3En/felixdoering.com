@@ -1,0 +1,6 @@
+default:
+  head:
+    -
+      src: /assets/js/vendor/jquery-min.js
+    - 
+      src: /assets/js/menu-min.js

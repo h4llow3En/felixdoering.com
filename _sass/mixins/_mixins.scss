@@ -1,0 +1,30 @@
+@mixin fade($hcol, $ncol) {
+	color: $ncol;
+	transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in;
+	-moz-transition: all 1s ease-in;
+	&:hover {
+		transition: all 0.25s ease-in-out;
+		-webkit-transition: all 0.25s ease-in;
+		-moz-transition: all 0.25s ease-in;
+		color: $hcol;
+	}
+}
+
+@mixin border-box {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+%clearfix {
+	*zoom: 1;
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}

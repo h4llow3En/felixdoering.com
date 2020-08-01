@@ -1,0 +1,40 @@
+<header class="navigation">
+
+    <div class="navrow">
+        <div class="logo hidden">
+            {{ site.title }}
+        </div>
+
+        <div class="mobile-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        {% if site.languages %}
+        <div class="language">
+            {% for language in site.languages %}
+            {% capture href%}{{ site.baseurl_root }}{% if forloop.first != true %}/{{ language }}{% endif %}{{ page.url }}{% endcapture %}
+            {% if site.lang == language %}
+            {{ language | upcase }}
+            {% else %}
+            <a href="{{ href }}">{{ language | upcase }}</a>
+            {% endif %}
+            {% if forloop.last != true %}/{% endif %}
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        <nav>
+            <ul>
+                {% for page in site.pages %}
+                <li>
+                    <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+
+        </nav>
+
+
+    </div>
+
+</header>

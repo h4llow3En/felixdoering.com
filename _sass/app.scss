@@ -1,0 +1,38 @@
+
+@charset "UTF-8";
+
+/* Import Font */
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+
+/* Import Vendor*/
+@import 'vendor/normalize';
+
+/* Import Fontawesome */
+@import 'vendor/fontawesome';
+@import 'vendor/solid';
+
+/* Import Mixins */
+@import 'mixins/mixins';
+
+/* Import Basics*/
+@import 'basic/variables';
+@import 'basic/base';
+@import 'basic/grid';
+@import 'basic/navigation';
+
+/* General */
+html {
+    background: $bg-color;
+    color: $text-color;
+    font-family: $font-family;
+    font-size: $font-size-base;
+    font-weight: $font-weight-base;
+    height: 100%;
+    line-height: $base-line-height;
+    overflow-y: scroll;
+}
+
+body {
+    height: 100%;
+  }
+

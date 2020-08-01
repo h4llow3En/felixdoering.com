@@ -1,0 +1,24 @@
+a {
+	@include fade($highlight-color, $primary-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: $primary-color;
+}
+
+body {
+	min-height: 100%;
+}
+
+main {
+	min-height: calc(100% - 11rem);
+}
+
+p#skip-link {
+	margin: 0;
+}

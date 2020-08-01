@@ -1,0 +1,27 @@
+{
+  "name": "felixdoering_theme",
+  "version": "1.0.0",
+  "description": "Jekyll theme for felixdoering.com",
+  "scripts": {
+    "watch": "gulp",
+    "build": "gulp build",
+    "icons": "gulp generate-favicon",
+    "clean": "gulp clean"
+  },
+  "author": "h4llow3En <development@felixdoering.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-minify": "^3.1.0",
+    "gulp-real-favicon": "^0.3.2",
+    "gulp-sass": "^4.1.0",
+    "jquery": "^3.5.1",
+    "node-sass": "^4.14.1",
+    "normalize-css": "^2.3.1",
+    "yargs": "^15.3.1"
+  }
+}
