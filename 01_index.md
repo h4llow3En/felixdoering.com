@@ -1,9 +1,7 @@
 ---
 title: titles.home
 layout: page
-namespace:     home
 permalink:      /
-permalink_de:   /
 ---
 
 # Welcome

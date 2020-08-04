@@ -1,9 +1,7 @@
 ---
 title: titles.about
 layout: page
-namespace:     about
 permalink: /about
-permalink_de:   /ueber-mich
 ---
 
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
