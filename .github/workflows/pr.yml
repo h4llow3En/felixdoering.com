@@ -1,4 +1,4 @@
-name: Jekyll site CI
+name: Check jekyll build of PR
 
 on:
   pull_request:
