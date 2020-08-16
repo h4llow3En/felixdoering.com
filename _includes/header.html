@@ -1,7 +1,11 @@
+{% assign front = false %}
+{% if page.url == "/" or page.url == "/de" %}
+{% assign front = true %}
+{% endif %}
 <header class="navigation">
 
     <div class="navrow">
-        <div class="logo hidden">
+        <div class="{% if front %}hidden front {% endif %}logo">
             {{ site.title }}
         </div>
 
