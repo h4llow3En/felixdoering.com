@@ -2,9 +2,9 @@
 $(document).ready(function () {
     $(window).scroll(function () {
         if ($(window).scrollTop() > 100) {
-            $('.logo').removeClass('hidden');
+            $('.logo.front').removeClass('hidden');
         } else {
-            $('.logo').addClass('hidden');
+            $('.logo.front').addClass('hidden');
         }
     });
     $('.mobile-toggle').click(function () {
