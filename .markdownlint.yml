@@ -2,6 +2,7 @@
 
 default: true
 MD025: false
+MD041: false
 header-style:
   style: atx
 no-trailing-spaces:
