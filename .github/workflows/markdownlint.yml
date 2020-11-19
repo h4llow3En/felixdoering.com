@@ -1,0 +1,16 @@
+name: Run markdownlint
+
+on:
+  push:
+    branches-ignore:
+      - gh-pages
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: nosborn/github-action-markdown-cli@v1.1.1
+        with:
+          files: "**/*.md"
+          config_file: ".markdownlint.yml"
