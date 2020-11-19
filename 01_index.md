@@ -1,5 +1,6 @@
 ---
-layout: page
+title: titles.home
+layout: teaserpage
 permalink: /
 ---
 
