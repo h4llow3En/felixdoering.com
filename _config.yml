@@ -9,10 +9,12 @@ github_username:  h4llow3En
 telegram_username: h4llow3En
 
 languages: ["en", "de"]
-exclude_from_localizations:
-  - assets
+# exclude_from_localizations:
 
 assets:
+  source_maps: false
+  destination: "/assets"
+  compression: true
   digest: false
 
 plugins:
