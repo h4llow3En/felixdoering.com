@@ -17,9 +17,10 @@
   <meta {% for item in link %} {{ item[0] }}="{{ item[1] }}" {% endfor %}>
   {% endfor %}
 
-  {% for sheet in site.data.style.default.head %}
-  {% include stylesheet.html stylesheet=sheet %}
-  {% endfor %}
+  {% asset app.css %}
+
+  <!-- FOR NOW HERE BECAUSE I LIKE THIS CONFIGURATION -->
+  <!-- <style type="text/css" media="screen"> </style> -->
 
   {% for script in site.data.scripts.default.head %}
   <script src="{{ script.src  | prepend: site.baseurl_root }}"

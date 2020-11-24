@@ -12,6 +12,9 @@ languages: ["en", "de"]
 exclude_from_localizations:
   - assets
 
+assets:
+  digest: false
+
 plugins:
   - jekyll-multiple-languages-plugin
   - jekyll-assets
