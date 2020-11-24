@@ -1,0 +1,29 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, init-scale=1">
+
+  <title>{% t page.title %}</title>
+  <meta name="description"
+    content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 300 }}{% else %}{{ site.description }}{% endif %}">
+
+  {% for link in site.data.icons.link %}
+  <link {% for item in link %}
+    {{ item[0] }}="{% if item[0] == 'href' %}{{ item[1]  | prepend: site.baseurl_root }}{% else %}{{ item[1] }}{% endif %}"
+    {% endfor %}>
+  {% endfor %}
+
+  {% for link in site.data.icons.meta %}
+  <meta {% for item in link %} {{ item[0] }}="{{ item[1] }}" {% endfor %}>
+  {% endfor %}
+
+  {% for sheet in site.data.style.default.head %}
+  {% include stylesheet.html stylesheet=sheet %}
+  {% endfor %}
+
+  {% for script in site.data.scripts.default.head %}
+  <script src="{{ script.src  | prepend: site.baseurl_root }}"
+    {% if script.additional %}{% for item in script.additional %} {{item[0]}}="{{item[1]}}" {% endfor %}
+    {% endif %}></script>
+  {% endfor %}
+</head>

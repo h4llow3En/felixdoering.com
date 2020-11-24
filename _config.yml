@@ -1,0 +1,24 @@
+title: Felix Döring
+description: >
+  Felix Döring - Software Developer in Dresden, Germany
+baseurl: ""
+url: "felixdoering.com"
+email: mail@felixdoering.com
+twitter_username: Felix_Doering
+github_username:  h4llow3En
+telegram_username: h4llow3En
+
+languages: ["en", "de"]
+exclude_from_localizations:
+  - assets
+
+plugins:
+  - jekyll-multiple-languages-plugin
+  - jekyll-assets
+
+# exclude:
+  # - yarn.lock
+  # - faviconData.json
+  # - gulpfile.js
+  # - package.json
+  # - package-lock.json

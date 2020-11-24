@@ -1,0 +1,27 @@
+name: Check jekyll build of PR
+
+on:
+  pull_request:
+    branches: master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '15'
+    - run: npm ci
+    - run: npm run build
+    - name: Build the site in the jekyll/builder container
+      run: |
+        docker run \
+        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+        jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future --baseurl /felixdoering"
+    - uses: Cyb3r-Jak3/html5validator-action@v0.4.2
+      with:
+        root: _site/
+        css: true
