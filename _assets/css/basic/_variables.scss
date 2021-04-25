@@ -1,0 +1,21 @@
+/* Variables */
+
+/* Grid definition*/
+$grid-columns: 12;
+$grid-max-width: 95em;
+
+/* Breakpoints*/
+$breakpoint-medium: "only screen and (min-width: 48em)";
+$breakpoint-large: "only screen and (min-width: 60em)";
+
+$font-family: "Raleway", sans-serif;
+$font-size-base: 1rem !default;
+$font-size-h1: 2rem !default;
+$font-weight-strong: 700;
+$font-weight-base: 400;
+$base-line-height: 1.5rem;
+$text-color: #FFFFFF !default;
+$bg-color: #070707;
+$primary-color: #711506;
+$secondary-color: #B3B3B3;
+$highlight-color: #D71506;
