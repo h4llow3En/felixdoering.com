@@ -17,14 +17,19 @@
 /* General */
 html {
   box-sizing: border-box;
-  background: $bg-color;
-  color: $text-color;
+  background: $bg-color-darkmode;
+  color: $text-color-darkmode;
   font-family: $font-family;
   font-size: $font-size-base;
   font-weight: $font-weight-base;
   height: 100%;
   line-height: $base-line-height;
   overflow-y: scroll;
+
+  @media screen and (prefers-color-scheme: light) {
+    background: $bg-color-lightmode;
+    color: $text-color-lightmode;
+  }
 }
 
 body {

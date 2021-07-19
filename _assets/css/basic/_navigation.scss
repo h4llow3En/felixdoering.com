@@ -25,9 +25,12 @@
   width: 100%;
   padding-top: 1em;
   padding-bottom: 0.5em;
-  background-color: $bg-color;
+  background-color: $bg-color-darkmode;
   overflow: hidden;
   z-index: 999;
+  @media screen and (prefers-color-scheme: light) {
+    background-color: $bg-color-lightmode;
+  }
 }
 
 .menu {
@@ -43,8 +46,11 @@
 
 .language {
   a {
-    @include fade($text-color, $secondary-color);
+    @include fade($text-color-darkmode, $secondary-color);
     text-decoration: none;
+    @media screen and (prefers-color-scheme: light) {
+      @include fade($text-color-lightmode, $secondary-color);
+    }
   }
 
   div {
@@ -66,9 +72,12 @@ nav {
   }
 
   a {
-    color: $text-color;
+    color: $text-color-darkmode;
     text-decoration: none;
     text-transform: uppercase;
+    @media screen and (prefers-color-scheme: light) {
+      color: $text-color-lightmode;
+    }
   }
 
   ul {
@@ -94,10 +103,12 @@ nav {
     }
 
     li {
-      display: inline-block;
+      display: inline-flex;
       margin-right: 1.5em;
+      padding: 3px 0;
 
       @media only screen and (max-width: 60em) {
+      display: inline-block;
         width: 100%;
         padding: 7px 0;
         margin: 0;
