@@ -1,6 +1,9 @@
 a {
-  @include fade($highlight-color, $primary-color);
+  @include fade($highlight-color, $primary-color-darkmode);
   text-decoration: none;
+  @media screen and (prefers-color-scheme: light) {
+    @include fade($highlight-color, $primary-color-lightmode);
+  }
 }
 
 h1,
@@ -9,7 +12,10 @@ h3,
 h4,
 h5,
 h6 {
-  color: $primary-color;
+  color: $primary-color-darkmode;
+  @media screen and (prefers-color-scheme: light) {
+    color: $primary-color-lightmode;
+  }
 }
 
 main {
