@@ -2,7 +2,7 @@ name: Check jekyll build of PR
 
 on:
   pull_request:
-    branches: main
+    branches: [main]
 
 jobs:
   build:
