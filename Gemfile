@@ -5,6 +5,9 @@ gem "jekyll", "~> 4.0.1"
 group :jekyll_plugins do
   gem 'jekyll-multiple-languages-plugin', '~> 1.7'
   gem "jekyll-assets", git: "https://github.com/envygeeks/jekyll-assets"
+  gem "font-awesome-sass"
+  gem "uglifier"
+  gem "sass"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

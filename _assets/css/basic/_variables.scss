@@ -1,8 +1,8 @@
 /* Variables */
 
 /* Grid definition*/
-$grid-columns: 12;
-$grid-max-width: 95em;
+$max-width: 90%;
+$max-width-medium: 85%;
 
 /* Breakpoints*/
 $breakpoint-medium: "only screen and (min-width: 48em)";
@@ -16,6 +16,6 @@ $font-weight-base: 400;
 $base-line-height: 1.5rem;
 $text-color: #FFFFFF !default;
 $bg-color: #070707;
-$primary-color: #711506;
+$highlight-color: #711506;
 $secondary-color: #B3B3B3;
-$highlight-color: #D71506;
+$primary-color: #b90e02;

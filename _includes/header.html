@@ -1,0 +1,41 @@
+{% assign front = false %}
+{% if page.url == "/" or page.url == "/de" %}
+{% assign front = true %}
+{% endif %}
+<header class="navigation">
+  <div class="menu">
+    <div class="logo">
+      {{ site.title }}
+    </div>
+
+    <div class="mobile-toggle">
+      <i class="fas fa-bars"></i><i class="fas fa-times hidden"></i>
+    </div>
+
+
+    <div class="nav-items">
+      <nav>
+        <ul>
+          {% for navpage in site.pages %}
+          {% if navpage.title != "titles.error" %}
+          <li {% if page.title==navpage.title %}class="active" {% endif %}>
+            <a href="{{ navpage.url | prepend: site.baseurl }}">{% t navpage.title %}</a>
+          </li>
+          {% endif %}
+          {% endfor %}
+          {% if site.languages %}
+          <li class="language">
+            {% for language in site.languages %}
+            <div>
+              {% capture href%}{{ site.baseurl_root }}{% if forloop.first != true %}/{{ language }}{% endif %}{{
+              page.url}}{%endcapture %}{% if site.lang == language %}{{ language | upcase }}{% else %}<a
+                href="{{ href }}">{{ language | upcase }}</a>{% endif %}{% if forloop.last != true %}/{% endif %}
+            </div>
+            {% endfor %}
+          </li>
+          {% endif %}
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>

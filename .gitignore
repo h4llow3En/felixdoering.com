@@ -5,13 +5,4 @@ _site
 vendor
 
 .bundle
-assets
 .vscode
-node_modules/
-.npm
-
-faviconData.json
-_sass/vendor
-_js/vendor
-
-yarn-error.log

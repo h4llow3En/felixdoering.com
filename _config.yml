@@ -9,13 +9,16 @@ github_username:  h4llow3En
 telegram_username: h4llow3En
 
 languages: ["en", "de"]
-# exclude_from_localizations:
+exclude_from_localizations: ["assets"]
 
 assets:
-  source_maps: false
+  source_maps: true
   destination: "/assets"
   compression: true
-  digest: false
+  digest: true
+  compress:
+    css:  sass
+    js:   uglifier
 
 plugins:
   - jekyll-multiple-languages-plugin
