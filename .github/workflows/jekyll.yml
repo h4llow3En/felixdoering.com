@@ -11,11 +11,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - uses: actions/setup-node@v1
-      with:
-        node-version: '15'
-    - run: npm ci
-    - run: npm run build
     - name: Build the site in the jekyll/builder container
       run: |
         docker run \
