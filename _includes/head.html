@@ -20,6 +20,9 @@
   {% asset app.css %}
 
   {% asset app.js %}
+  {% if page.layout == "playlist" %}
+  {% asset playlist.js %}
+  {% endif %}
 
   {% for script in site.data.scripts.default.head %}
   <script src="{{ script.src  | prepend: site.baseurl_root }}"
