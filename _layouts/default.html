@@ -5,12 +5,15 @@ layout: compress
 <html lang="{{site.lang}}">
 
 {% include head.html %}
-{% include header.html %}
 
 <body>
-    <main>
-        {{ content }}
-    </main>
+  {% include header.html %}
+  <main>
+    {{ content }}
+  </main>
+  {% include footer.html %}
+
 </body>
+
 
 </html>

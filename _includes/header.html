@@ -17,7 +17,7 @@
       <nav>
         <ul>
           {% for navpage in site.pages %}
-          {% if navpage.title != "titles.error" %}
+          {% if navpage.title != "titles.error" and navpage.title != "titles.imprint" and navpage.title != "titles.privacy" %}
           <li {% if page.title==navpage.title %}class="active" {% endif %}>
             <a href="{{ navpage.url | prepend: site.baseurl }}">{% t navpage.title %}</a>
           </li>

@@ -2,3 +2,11 @@ titles:
   home: Home
   about: Über mich
   error: "404"
+  privacy: Datenschutzerklärung
+  imprint: Impressum
+
+description:
+  job: Softwareentwicker
+  page: Felix Döring - Softwareentwicker aus Dresden
+
+imprint: " "

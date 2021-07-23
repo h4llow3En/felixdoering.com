@@ -1,32 +1,37 @@
 title: Felix Döring
-description: >
-  Felix Döring - Software Developer in Dresden, Germany
 baseurl: ""
 url: "felixdoering.com"
-email: mail@felixdoering.com
-twitter_username: Felix_Doering
-github_username:  h4llow3En
-telegram_username: h4llow3En
+email:
+  address: mail@felixdoering.com
+  gpg:
+    path: /assets/gpg/Felix_Döring_BDF33B31.asc
+    fprint: EF47 E6C7 B7A2 7022 BB02  3243 3F36 9D08 BDF3 3B31
+social:
+  twitter: https://twitter.com/Felix_Doering
+  github: https://github.com/h4llow3En
+  telegram: https://t.me/h4llow3En
+  linkedin: https://de.linkedin.com/in/felix-döring-7455a6204
 
 languages: ["en", "de"]
-exclude_from_localizations: ["assets"]
+exclude_from_localizations: ["assets", "imprint.md"]
 
 assets:
   source_maps: true
   destination: "/assets"
   compression: true
-  digest: true
+  digest: false
+
   compress:
-    css:  sass
-    js:   uglifier
+    css: sass
+    js: uglifier
+  plugins:
+    autoprefixer:
+      browsers:
+        - "last 2 versions"
+    img:
+      optim: {}
 
 plugins:
   - jekyll-multiple-languages-plugin
   - jekyll-assets
-
-# exclude:
-  # - yarn.lock
-  # - faviconData.json
-  # - gulpfile.js
-  # - package.json
-  # - package-lock.json
+  - jekyll-email-protect

@@ -2,3 +2,11 @@ titles:
   home: Home
   about: About
   error: "404"
+  privacy: Privacy Policy
+  imprint: Imprint
+
+description:
+  job: Software Developer
+  page: Felix Döring - Software Developer in Dresden, Germany
+
+imprint: "German law demands the following information."

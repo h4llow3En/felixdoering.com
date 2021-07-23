@@ -13,6 +13,7 @@
 @import "basic/variables";
 @import "basic/base";
 @import "basic/navigation";
+@import "basic/footer";
 
 /* General */
 html {
@@ -22,7 +23,6 @@ html {
   font-family: $font-family;
   font-size: $font-size-base;
   font-weight: $font-weight-base;
-  height: 100%;
   line-height: $base-line-height;
   overflow-y: scroll;
 
@@ -32,13 +32,10 @@ html {
   }
 }
 
+html,
 body {
-  max-width: $max-width-medium;
-  margin: 0 auto;
-
-  @media #{$breakpoint-large} {
-    max-width: $max-width;
-  }
+  height: 100%;
+  margin: 0;
 }
 
 *,
