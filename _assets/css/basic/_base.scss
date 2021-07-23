@@ -19,12 +19,15 @@ h6 {
 }
 
 main {
-  min-height: calc(100% - 3rem);
+  min-height: calc(100% - 5rem);
   max-width: $max-width-medium;
   margin: 0 auto;
   padding-top: $nav-foot-height ;
   @media #{$breakpoint-large} {
     max-width: $max-width;
+  }
+  @media screen and (min-width: 70em) {
+    min-height: calc(100% - 4rem);
   }
 }
 
