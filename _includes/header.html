@@ -2,9 +2,10 @@
 {% if page.url == "/" or page.url == "/de" %}
 {% assign front = true %}
 {% endif %}
-<header class="navigation">
+<header class="navigation {% if page.layout == " bannerpage" %}transparent{% endif %}">
   <div class="menu">
-    <div class="logo">
+
+    <div class="logo {% if page.layout == " bannerpage" %}hidden{% endif %}">
       {{ site.title }}
     </div>
 
@@ -17,7 +18,8 @@
       <nav>
         <ul>
           {% for navpage in site.pages %}
-          {% if navpage.title != "titles.error" and navpage.title != "titles.imprint" and navpage.title != "titles.privacy" %}
+          {% if navpage.title != "titles.error" and navpage.title != "titles.imprint" and navpage.title !=
+          "titles.privacy" %}
           <li {% if page.title==navpage.title %}class="active" {% endif %}>
             <a href="{{ navpage.url | prepend: site.baseurl }}">{% t navpage.title %}</a>
           </li>

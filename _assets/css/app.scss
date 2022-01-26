@@ -9,11 +9,18 @@
 /* Import Mixins */
 @import 'mixins/mixins';
 
+/* Import variables */
+@import "theme/variables";
+
 /* Import Basics */
-@import "basic/variables";
 @import "basic/base";
-@import "basic/navigation";
-@import "basic/footer";
+
+/* Import layout */
+@import "layout/navigation";
+@import "layout/footer";
+
+/* Import modules */
+@import "modules/banner";
 
 /* General */
 html {

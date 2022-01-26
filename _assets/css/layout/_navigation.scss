@@ -37,6 +37,12 @@
   @media screen and (prefers-color-scheme: light) {
     background-color: $bg-color-lightmode;
   }
+
+}
+
+.transparent {
+  // background-color: transparent !important;
+  background: none;
 }
 
 .menu {

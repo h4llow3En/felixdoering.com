@@ -1,8 +1,10 @@
 ---
 title: titles.home
-layout: page
+layout: bannerpage
 permalink: /
 ---
+
+<!-- {% include banner.html %} -->
 
 # H1
 
