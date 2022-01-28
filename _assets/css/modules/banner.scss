@@ -1,13 +1,13 @@
 .banner {
   top: 0;
   left: 0;
-  height: auto;
+  height: 100%;
   width: 100%;
-  background-color: $banner-background-darkmode;
+  background-color: $bg-color-darkmode;
 
 
   @media screen and (prefers-color-scheme: light) {
-    background-color: $banner-background-lightmode;
+    background-color: $bg-color-lightmode;
   }
 
   @media #{$breakpoint-large} {
@@ -15,37 +15,45 @@
     flex-direction: row;
     height: 100%;
 
+    background-color: $banner-background-darkmode;
+
+
+    @media screen and (prefers-color-scheme: light) {
+      background-color: $banner-background-lightmode;
+    }
+
   }
 }
 
 .bannerimage {
+  height: 100%;
   width: 100%;
-  height: auto;
+  object-fit: cover;
 
   @media #{$breakpoint-large} {
-    height: 100%;
     width: auto;
     clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%);
   }
 }
 
 .bannercontent {
-  background-color: rgba($color: $banner-background-darkmode, $alpha: .7);
+  background: rgba($color: $banner-background-darkmode, $alpha: .7);
+
   height: 35%;
   width: 100%;
-  top:65%;
+  top: 65%;
   position: absolute;
 
   @media screen and (prefers-color-scheme: light) {
-    background-color: rgba($color: $banner-background-lightmode, $alpha: .7);
+    background: rgba($color: $banner-background-lightmode, $alpha: .7);
   }
 
   @media #{$breakpoint-large} {
     height: inherit;
     width: inherit;
     top: inherit;
-    position:inherit;
-    background-color: transparent;
+    position: inherit;
+    background: transparent;
     flex-grow: 100;
     display: flex;
     margin-left: 10%;
