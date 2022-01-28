@@ -1,5 +1,54 @@
 .banner {
-  height: 100px;
-  width: 100px;
-  background-color: #CC55CC;
+  top: 0;
+  left: 0;
+  height: auto;
+  width: 100%;
+  background-color: $banner-background-darkmode;
+
+
+  @media screen and (prefers-color-scheme: light) {
+    background-color: $banner-background-lightmode;
+  }
+
+  @media #{$breakpoint-large} {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+
+  }
+}
+
+.bannerimage {
+  width: 100%;
+  height: auto;
+
+  @media #{$breakpoint-large} {
+    height: 100%;
+    width: auto;
+    clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+
+.bannercontent {
+  background-color: rgba($color: $banner-background-darkmode, $alpha: .7);
+  height: 35%;
+  width: 100%;
+  top:65%;
+  position: absolute;
+
+  @media screen and (prefers-color-scheme: light) {
+    background-color: rgba($color: $banner-background-lightmode, $alpha: .7);
+  }
+
+  @media #{$breakpoint-large} {
+    height: inherit;
+    width: inherit;
+    top: inherit;
+    position:inherit;
+    background-color: transparent;
+    flex-grow: 100;
+    display: flex;
+    margin-left: 10%;
+    align-items: center;
+  }
 }

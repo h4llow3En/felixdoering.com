@@ -17,16 +17,13 @@
   <meta {% for item in link %} {{ item[0] }}="{{ item[1] }}" {% endfor %}>
   {% endfor %}
 
-  {% asset app.css %}
+  {% asset felixdoering.css %}
 
-  {% asset app.js %}
+  {% asset navigation.js %}
+  {% if page.layout == "bannerpage" %}
+  {% asset banner.js %}
+  {% endif %}
   {% if page.layout == "playlist" %}
   {% asset playlist.js %}
   {% endif %}
-
-  {% for script in site.data.scripts.default.head %}
-  <script src="{{ script.src  | prepend: site.baseurl_root }}"
-    {% if script.additional %}{% for item in script.additional %} {{item[0]}}="{{item[1]}}" {% endfor %}
-    {% endif %}></script>
-  {% endfor %}
 </head>

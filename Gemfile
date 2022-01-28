@@ -1,9 +1,9 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.0.1"
+gem "jekyll", "~> 4.2.1"
 
 group :jekyll_plugins do
-  gem 'jekyll-multiple-languages-plugin', '~> 1.7'
+  gem 'jekyll-multiple-languages-plugin'
   gem "jekyll-assets", git: "https://github.com/envygeeks/jekyll-assets"
   gem 'jekyll-email-protect'
   gem "font-awesome-sass"

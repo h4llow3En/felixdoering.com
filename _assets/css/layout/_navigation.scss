@@ -34,15 +34,25 @@
   overflow: hidden;
   z-index: 999;
 
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in;
+  -moz-transition: all .5s ease-in;
+
   @media screen and (prefers-color-scheme: light) {
     background-color: $bg-color-lightmode;
   }
-
 }
 
 .transparent {
-  // background-color: transparent !important;
-  background: none;
+  background-color: rgba($color: $bg-color-darkmode, $alpha: .5);
+  transition: all .25s ease-in-out;
+  -webkit-transition: all .25s ease-in;
+  -moz-transition: all .25s ease-in;
+
+  @media screen and (prefers-color-scheme: light) {
+    background-color: rgba($color: $bg-color-lightmode, $alpha: .5);
+  }
+
 }
 
 .menu {
@@ -160,9 +170,9 @@ nav {
 
 .hidden {
   visibility: hidden;
-  transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
+  transition: all .25s ease-in-out;
+  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
 }
 
 .mobile-toggle {

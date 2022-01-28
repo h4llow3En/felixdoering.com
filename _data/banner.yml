@@ -1,0 +1,6 @@
+- for_page: /
+  image: background.jpg
+  alt: Portrait Felix Döring
+  title: Felix Döring
+  subtitle: Full-Stack Developer
+  social_links: true

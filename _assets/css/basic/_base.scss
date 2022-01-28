@@ -1,8 +1,8 @@
 a {
-  @include fade($highlight-color, $primary-color-darkmode);
+  @include fade($highlight-color-darkmode, $primary-color-darkmode);
   text-decoration: none;
   @media screen and (prefers-color-scheme: light) {
-    @include fade($highlight-color, $primary-color-lightmode);
+    @include fade($highlight-color-lightmode, $primary-color-lightmode);
   }
 }
 

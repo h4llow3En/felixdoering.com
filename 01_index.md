@@ -2,9 +2,9 @@
 title: titles.home
 layout: bannerpage
 permalink: /
+anchors:
+  - about-me
 ---
-
-<!-- {% include banner.html %} -->
 
 # H1
 
@@ -12,7 +12,7 @@ permalink: /
 
 ### H3
 
-#### H4
+#### <a name="about-me"></a>H4
 
 Lorem [ipsum dolor](https://google.com) sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed vulputate mi sit amet mauris commodo. Amet nulla facilisi morbi tempus. Enim ut tellus elementum sagittis vitae et. Dictum at tempor commodo ullamcorper a lacus. Sagittis purus sit amet volutpat. Est velit egestas dui id ornare. Integer enim neque volutpat ac tincidunt vitae semper quis. Neque sodales ut etiam sit amet nisl purus in. Dignissim enim sit amet venenatis urna cursus eget nunc.
 

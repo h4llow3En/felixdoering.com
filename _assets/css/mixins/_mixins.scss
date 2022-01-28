@@ -4,9 +4,9 @@
 	-webkit-transition: all .25s ease-in;
 	-moz-transition: all .25s ease-in;
 	&:hover {
-		transition: all 1s ease-in-out;
-		-webkit-transition: all 1s ease-in;
-		-moz-transition: all 01s ease-in;
+		transition: all .5s ease-in-out;
+		-webkit-transition: all .5s ease-in;
+		-moz-transition: all .5s ease-in;
 		color: $hcol;
 	}
 }

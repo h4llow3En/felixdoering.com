@@ -1,3 +1,13 @@
 <div class="banner">
-{% asset background.jpg @optim @automatic%}
+  {% for banner in site.data.banner %}
+  {% if page.permalink == banner.for_page %}
+  <div class="bannercontent">
+    <div>
+      <div class="title">{{ banner.title }}</div>
+      <div class="subtitle">{{ banner.subtitle }}</div>
+    </div>
+  </div>
+  {% asset {{banner.image}} @optim @automatic alt="{{ banner.alt }}" class="bannerimage"%}
+  {% endif %}
+  {% endfor %}
 </div>
