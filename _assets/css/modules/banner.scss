@@ -116,6 +116,11 @@
 
     div {
       margin: 0 .25rem;
+
+      @media #{$breakpoint} {
+        margin: 0 .5rem;
+      }
+
       display: inline-block;
     }
   }
