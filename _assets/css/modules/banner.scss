@@ -10,7 +10,7 @@
     background-color: $bg-color-lightmode;
   }
 
-  @media #{$breakpoint-large} {
+  @media #{$breakpoint} {
     display: flex;
     flex-direction: row;
     height: 100%;
@@ -30,9 +30,9 @@
   width: 100%;
   object-fit: cover;
 
-  @media #{$breakpoint-large} {
+  @media #{$breakpoint} {
     width: auto;
-    clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 25% 100%);
   }
 }
 
@@ -43,12 +43,16 @@
   width: 100%;
   top: 65%;
   position: absolute;
+  display: flex;
+  align-items: center;
 
   @media screen and (prefers-color-scheme: light) {
     background: rgba($color: $banner-background-lightmode, $alpha: .7);
   }
 
-  @media #{$breakpoint-large} {
+  @media #{$breakpoint} {
+    display: inherit;
+    align-items: inherit;
     height: inherit;
     width: inherit;
     top: inherit;
@@ -58,5 +62,61 @@
     display: flex;
     margin-left: 10%;
     align-items: center;
+  }
+
+  .innerframe {
+    width: 100%;
+
+    @media #{$breakpoint} {
+      width: auto;
+    }
+  }
+
+  .title {
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 900;
+    color: $banner-text-color;
+    text-align: center;
+
+    @media #{$breakpoint} {
+      font-size: 6rem;
+      line-height: 6rem;
+      text-align: left;
+      margin-top: inherit;
+    }
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: $banner-text-color;
+    text-align: center;
+
+    @media #{$breakpoint} {
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+      padding-left: 6px;
+      text-align: left;
+    }
+  }
+
+  .socials {
+    color: $banner-text-color;
+    text-align: center;
+    margin-top: 1%;
+
+    @media #{$breakpoint} {
+      margin-top: 10%;
+    }
+
+    a {
+      color: $banner-text-color;
+    }
+
+    div {
+      margin: 0 .25rem;
+      display: inline-block;
+    }
   }
 }

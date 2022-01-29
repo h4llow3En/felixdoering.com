@@ -45,7 +45,7 @@ footer {
   margin: 0 auto;
   max-width: $max-width-medium;
 
-  @media #{$breakpoint-large} {
+  @media #{$breakpoint} {
     max-width: $max-width;
   }
 

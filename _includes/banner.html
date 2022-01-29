@@ -2,12 +2,33 @@
   {% for banner in site.data.banner %}
   {% if page.permalink == banner.for_page %}
   <div class="bannercontent">
-    <div>
+    <div class="innerframe">
       <div class="title">{{ banner.title }}</div>
       <div class="subtitle">{{ banner.subtitle }}</div>
+      {% if banner.social_links == true %}
+      <div class="socials">
+        {% if site.email %}<div><a href="mailto:{{ site.email.address | encode_email }}"><i
+              class="fas fa-envelope"></i>
+            Mail</a>
+          (<a href="{{ site.email.gpg.path  | prepend: site.baseurl_root }}"><i class="fas fa-key"></i></a>)</div>{%
+        endif %}
+        {% if site.social.github %}<div><a href="{{ site.social.github }}" target="_blank"><i
+              class="fab fa-github"></i>
+            Github</a></div>{% endif %}
+        {% if site.social.twitter %}<div><a href="{{ site.social.twitter }}" target="_blank"><i
+              class="fab fa-twitter"></i>
+            Twitter</a></div>{% endif %}
+        {% if site.social.telegram %}<div><a href="{{ site.social.telegram }}" target="_blank"><i
+              class="fab fa-telegram-plane"></i> Telegram</a></div>{% endif %}
+        {% if site.social.linkedin %}<div><a href="{{ site.social.linkedin }}" target="_blank"><i
+              class="fab fa-linkedin"></i>
+            LinkedIn</a></div>{% endif %}
+      </div>
+      {% endif %}
     </div>
   </div>
   {% asset {{banner.image}} @optim @automatic alt="{{ banner.alt }}" class="bannerimage"%}
+
   {% endif %}
   {% endfor %}
 </div>

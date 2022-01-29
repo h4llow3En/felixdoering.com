@@ -1,22 +1,27 @@
 <footer>
-    <div class="copyright">
-      © 2021 by Felix Döring, Made with ♥ in Dresden
-    </div>
-    <div class="center">
-      {% if site.email %}<a href="mailto:{{ site.email.address | encode_email }}"><i class="fas fa-envelope"></i> Mail</a> (<a href="{{ site.email.gpg.path  | prepend: site.baseurl_root }}"><i class="fas fa-key"></i></a>){%
-      endif %}
-      {% if site.social.github %}<a href="{{ site.social.github }}" target="_blank"><i class="fab fa-github"></i> Github</a>{% endif %}
-      {% if site.social.twitter %}<a href="{{ site.social.twitter }}" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>{% endif %}
-      {% if site.social.telegram %}<a href="{{ site.social.telegram }}" target="_blank"><i class="fab fa-telegram-plane"></i> Telegram</a>{%
-      endif %}
-      {% if site.social.linkedin %}<a href="{{ site.social.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>{% endif
-      %}
-      </div>
-      <div class="legal">
-        {% for footerpage in site.pages %}
-        {% if footerpage.title == "titles.imprint" or footerpage.title == "titles.privacy" %}
-        <a href="{{ footerpage.url | prepend: site.baseurl }}">{% t footerpage.title %}</a>
-        {% endif %}
-        {% endfor %}
-      </div>
+  <div class="copyright">
+    © 2021 by Felix Döring, Made with ♥ in Dresden
+  </div>
+  <div class="center">
+    {% if site.email %}<a href="mailto:{{ site.email.address | encode_email }}"><i class="fas fa-envelope"></i> Mail</a>
+    (<a href="{{ site.email.gpg.path  | prepend: site.baseurl_root }}"><i class="fas fa-key"></i></a>){%
+    endif %}
+    {% if site.social.github %}<a href="{{ site.social.github }}" target="_blank"><i class="fab fa-github"></i>
+      Github</a>{% endif %}
+    {% if site.social.twitter %}<a href="{{ site.social.twitter }}" target="_blank"><i class="fab fa-twitter"></i>
+      Twitter</a>{% endif %}
+    {% if site.social.telegram %}<a href="{{ site.social.telegram }}" target="_blank"><i
+        class="fab fa-telegram-plane"></i> Telegram</a>{%
+    endif %}
+    {% if site.social.linkedin %}<a href="{{ site.social.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i>
+      LinkedIn</a>{% endif
+    %}
+  </div>
+  <div class="legal">
+    {% for footerpage in site.pages %}
+    {% if footerpage.title == "titles.imprint" or footerpage.title == "titles.privacy" %}
+    <a href="{{ footerpage.url | prepend: site.baseurl }}">{% t footerpage.title %}</a>
+    {% endif %}
+    {% endfor %}
+  </div>
 </footer>

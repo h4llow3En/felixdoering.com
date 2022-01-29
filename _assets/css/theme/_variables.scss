@@ -1,12 +1,11 @@
 /* Variables */
 
-/* Grid definition*/
+/* Max width definition*/
 $max-width: 90%;
 $max-width-medium: 85%;
 
 /* Breakpoints*/
-$breakpoint-medium: "only screen and (min-width: 48em)";
-$breakpoint-large: "only screen and (min-width: 60em)";
+$breakpoint: "only screen and (min-width: 60em)";
 
 $font-family: "Raleway", sans-serif;
 $font-size-base: 1rem !default;
@@ -25,4 +24,5 @@ $secondary-color: #B3B3B3;
 $primary-color-lightmode: #b90e02;
 $primary-color-darkmode: #d32418;
 $banner-background-lightmode: #C5C5C5;
-$banner-background-darkmode:#8A8A8A;
+$banner-background-darkmode:#686767;
+$banner-text-color: #711506

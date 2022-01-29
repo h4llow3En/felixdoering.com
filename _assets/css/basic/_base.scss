@@ -23,7 +23,7 @@ main {
   max-width: $max-width-medium;
   margin: 0 auto;
   padding-top: $nav-foot-height ;
-  @media #{$breakpoint-large} {
+  @media #{$breakpoint} {
     max-width: $max-width;
   }
   @media screen and (min-width: 70em) {
