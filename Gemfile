@@ -10,8 +10,7 @@ group :jekyll_plugins do
   gem "autoprefixer-rails"
   gem "uglifier"
   gem "sass"
-  gem 'image_optim'
-  gem 'image_optim_pack'
+  gem "ruby-vips"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

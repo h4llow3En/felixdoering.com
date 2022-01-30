@@ -13,13 +13,14 @@ social:
   linkedin: https://de.linkedin.com/in/felix-döring-7455a6204
 
 languages: ["en", "de"]
-exclude_from_localizations: ["assets", "imprint.md"]
+exclude_from_localizations: ["assets"]
 
 assets:
-  source_maps: true
+  source_maps: false
   destination: "/assets"
   compression: true
   digest: false
+  gzip: true
 
   compress:
     css: sass
@@ -29,7 +30,7 @@ assets:
       browsers:
         - "last 2 versions"
     img:
-      optim: {}
+      vips: {}
 
 plugins:
   - jekyll-multiple-languages-plugin

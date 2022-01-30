@@ -2,10 +2,10 @@
 {% if page.url == "/" or page.url == "/de" %}
 {% assign front = true %}
 {% endif %}
-<header class="navigation {% if page.layout == "bannerpage" %}transparent{% endif %}">
+<header class="navigation {% if page.layout == " bannerpage" %}transparent{% endif %}">
   <div class="menu">
 
-    <div class="logo {% if page.layout == "bannerpage" %}hidden{% endif %}">
+    <div class="logo {% if page.layout == " bannerpage" %}hidden{% endif %}">
       {{ site.title }}
     </div>
 
@@ -21,7 +21,7 @@
           {% if navpage.title != "titles.error" and navpage.title != "titles.imprint" and navpage.title !=
           "titles.privacy" %}
           <li {% if page.title==navpage.title %}class="active" {% endif %}>
-            <a href="{{ navpage.url | prepend: site.baseurl }}">{% t navpage.title %}</a>
+            <a href="{{ navpage.url | prepend: site.baseurl }}" title="{% t navpage.title %}">{% t navpage.title %}</a>
           </li>
           {% if navpage.anchors %}
           {% for anchor in navpage.anchors %}{% endfor %}
@@ -34,7 +34,8 @@
             <div>
               {% capture href%}{{ site.baseurl_root }}{% if forloop.first != true %}/{{ language }}{% endif %}{{
               page.url}}{%endcapture %}{% if site.lang == language %}{{ language | upcase }}{% else %}<a
-                href="{{ href }}">{{ language | upcase }}</a>{% endif %}{% if forloop.last != true %}&nbsp;|&nbsp;{% endif %}
+                href="{{ href }}" title="{{ language | upcase }}">{{ language | upcase }}</a>{% endif %}{% if
+              forloop.last != true %}&nbsp;|&nbsp;{% endif %}
             </div>
             {% endfor %}
           </li>

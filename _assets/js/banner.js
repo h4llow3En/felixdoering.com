@@ -1,4 +1,3 @@
-//= require vendor/cash.min.js
 $(function () {
   var banner = $('.banner').get(0)
   if (typeof banner !== 'undefined') {
