@@ -24,19 +24,21 @@
             <a href="{{ navpage.url | prepend: site.baseurl }}" title="{% t navpage.title %}">{% t navpage.title %}</a>
           </li>
           {% if navpage.anchors %}
-          {% for anchor in navpage.anchors %}{% endfor %}
+          {% for anchor in navpage.anchors %}
+          <li class="anchorlink">
+            <a href="{{ navpage.url | prepend: site.baseurl }}#{{ anchor }}" title="{% t titles.{{anchor}} %}">{% t titles.{{anchor}} %}</a>
+          </li>
+          {% endfor %}
           {% endif %}
           {% endif %}
           {% endfor %}
           {% if site.languages %}
           <li class="language">
             {% for language in site.languages %}
-            <div>
-              {% capture href%}{{ site.baseurl_root }}{% if forloop.first != true %}/{{ language }}{% endif %}{{
+            <div>{% capture href%}{{ site.baseurl_root }}{% if forloop.first != true %}/{{ language }}{% endif %}{{
               page.url}}{%endcapture %}{% if site.lang == language %}{{ language | upcase }}{% else %}<a
                 href="{{ href }}" title="{{ language | upcase }}">{{ language | upcase }}</a>{% endif %}{% if
-              forloop.last != true %}&nbsp;|&nbsp;{% endif %}
-            </div>
+              forloop.last != true %}&nbsp;|&nbsp;{% endif %}</div>
             {% endfor %}
           </li>
           {% endif %}

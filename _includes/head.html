@@ -20,6 +20,13 @@
   {% asset felixdoering.css %}
 
   {% asset base.js %}
+
+  {% if page.anchors %}
+  <script>
+    var pageanchors = "{% for anchor in page.anchors %}{{ anchor }}{% if forloop.last != true %},{% endif %}{% endfor %}".split(',');
+  </script>
+  {% endif %}
+
   {% asset navigation.js %}
   {% if page.layout == "bannerpage" %}
   {% asset banner.js %}
