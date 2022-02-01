@@ -33,6 +33,10 @@ html {
   line-height: $base-line-height;
   overflow-y: scroll;
 
+  @media #{$breakpoint} {
+    font-size: $font-size-base-large;
+  }
+
   @media screen and (prefers-color-scheme: light) {
     background: $bg-color-lightmode;
     color: $text-color-lightmode;

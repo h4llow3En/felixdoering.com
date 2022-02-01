@@ -1,6 +1,7 @@
 a {
   @include fade($highlight-color-darkmode, $primary-color-darkmode);
   text-decoration: none;
+
   @media screen and (prefers-color-scheme: light) {
     @include fade($highlight-color-lightmode, $primary-color-lightmode);
   }
@@ -13,23 +14,28 @@ h4,
 h5,
 h6 {
   color: $primary-color-darkmode;
+
   @media screen and (prefers-color-scheme: light) {
     color: $primary-color-lightmode;
   }
 }
 
 h1 {
-  font-size: $font-size-h1;
+  @media #{$breakpoint} {
+    font-size: $font-size-h1;
+  }
 }
 
 main {
   min-height: calc(100% - 5rem);
   max-width: $max-width-medium;
   margin: 0 auto;
-  padding-top: $nav-foot-height ;
+  padding-top: $nav-foot-height;
+
   @media #{$breakpoint} {
     max-width: $max-width;
   }
+
   @media screen and (min-width: 70em) {
     min-height: calc(100% - 4rem);
   }
