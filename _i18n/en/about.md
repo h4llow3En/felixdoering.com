@@ -1,3 +1,3 @@
 # Hi, I'm Felix {#about-me}
 
-My mame is Felix Döring.
+My name is Felix Döring.
