@@ -19,6 +19,8 @@ $(function () {
       return a.offsetTop - b.offsetTop;
     });
 
+    let originalUrl = window.location.href.toString().split(window.location.host)[1].split("#")[0];
+
     function anchorMenu() {
       var windowTop = window.pageYOffset;
       var anchorActive = false;
@@ -29,7 +31,9 @@ $(function () {
           anchorElements.each(function (anchor) {
             var anchorElement = $(anchorElements.get(anchor))
             if (anchorElement.children()[0].hash.includes(anchorlink.id)) {
-              window.history.replaceState("", "", "#" + anchorlink.id);
+              if (window.location.href.toString().split(window.location.host)[1].split("#")[1] !== anchorlink.id) {
+                window.history.replaceState("", "", "#" + anchorlink.id);
+              }
               anchorElement.addClass('active');
               anchorActive = true;
             }
@@ -43,8 +47,9 @@ $(function () {
           var anchorElement = $(anchorElements.get(anchor))
           if (anchorElement.children()[0].hash.includes(lastId)) {
             anchorElement.prev().addClass('active');
-            // TODO: Remove anchor from url
-            // window.history.replaceState("", "", "/");
+            if (window.location.href.toString().split(window.location.host)[1] !== originalUrl) {
+              window.history.replaceState("", "", originalUrl);
+            }
           }
         });
       }
