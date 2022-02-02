@@ -28,7 +28,7 @@ assets:
   gzip: true
 
   compress:
-    css: sass
+    css: true
     js: uglifier
   plugins:
     autoprefixer:
