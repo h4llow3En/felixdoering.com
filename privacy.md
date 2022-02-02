@@ -3,4 +3,4 @@ title: titles.privacy
 layout: page
 ---
 
-{% tf privacy.md %}
+{% tf pages/privacy.md %}

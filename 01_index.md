@@ -6,4 +6,4 @@ anchors:
   - about-me
 ---
 
-{% tf about.md %}
+{% tf pages/about.md %}

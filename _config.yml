@@ -15,6 +15,11 @@ social:
 languages: ["en", "de"]
 exclude_from_localizations: ["assets"]
 
+collections:
+  posts:
+    output: true
+    permalink: /blog/:title
+
 assets:
   source_maps: true
   destination: "/assets"

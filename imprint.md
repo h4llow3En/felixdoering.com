@@ -3,4 +3,4 @@ title: titles.imprint
 layout: page
 ---
 
-{% tf imprint.md %}
+{% tf pages/imprint.md %}
