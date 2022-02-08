@@ -1,0 +1,11 @@
+Build Page:
+  stage: build
+  image: jekyll/builder
+  script:
+  - jekyll build
+  artifacts:
+    paths:
+    - _site
+    expire_in: 1 week
+  only:
+    - main
