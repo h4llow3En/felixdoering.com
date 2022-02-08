@@ -2,7 +2,8 @@ Build Page:
   stage: build
   image: jekyll/builder
   script:
-  - jekyll build --verbose
+    - chmod +x ci-build.sh
+    - ./ci-build.sh
   artifacts:
     paths:
     - _site
