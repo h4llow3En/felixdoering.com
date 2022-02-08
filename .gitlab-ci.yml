@@ -2,7 +2,7 @@ Build Page:
   stage: build
   image: jekyll/builder
   script:
-  - jekyll build
+  - jekyll build --verbose
   artifacts:
     paths:
     - _site
