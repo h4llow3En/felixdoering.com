@@ -1,0 +1,33 @@
+.content {
+  display: block;
+  width: 100%;
+  @media #{$breakpoint} {
+    display: inline-block;
+    // flex-direction: row;
+  }
+}
+
+.page {
+  @media #{$breakpoint} {
+    display: inline-block;
+  }
+}
+
+.two-col {
+  @media #{$breakpoint} {
+    float: inline-start;
+    width: 65%;
+  }
+}
+
+.side {
+  margin-top: 2rem;
+  @media #{$breakpoint} {
+    // margin-top: 0;
+    float: inline-end;
+    padding-left: 2rem;
+    width: 35%;
+    min-width: 10rem;
+    display: block;
+  }
+}

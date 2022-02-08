@@ -1,12 +1,12 @@
 @mixin fade($hcol, $ncol) {
-	color: $ncol;
-	transition: all .25s ease-in-out;
-	-webkit-transition: all .25s ease-in;
-	-moz-transition: all .25s ease-in;
-	&:hover {
-		transition: all .5s ease-in-out;
-		-webkit-transition: all .5s ease-in;
-		-moz-transition: all .5s ease-in;
-		color: $hcol;
-	}
+  color: $ncol;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in;
+  -moz-transition: all 0.25s ease-in;
+  &:hover {
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    color: $hcol;
+  }
 }

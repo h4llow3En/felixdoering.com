@@ -7,7 +7,7 @@
 @import "font-awesome";
 
 /* Import Mixins */
-@import 'mixins/mixins';
+@import "mixins/mixins";
 
 /* Import variables */
 @import "theme/variables";
@@ -21,6 +21,8 @@
 
 /* Import modules */
 @import "modules/banner";
+@import "modules/side";
+@import "modules/post";
 
 /* General */
 html {
@@ -32,6 +34,10 @@ html {
   font-weight: $font-weight-base;
   line-height: $base-line-height;
   overflow-y: scroll;
+
+  @media #{$breakpoint-fontsize} {
+    font-size: $font-size-base-large;
+  }
 
   @media screen and (prefers-color-scheme: light) {
     background: $bg-color-lightmode;

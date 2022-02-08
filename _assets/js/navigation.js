@@ -26,7 +26,7 @@ $(function () {
       var anchorActive = false;
       var anchorElements = $('.anchorlink');
       anchors.forEach(function (anchorlink) {
-        if (windowTop >= anchorlink.offsetTop - 100) {
+        if (windowTop >= anchorlink.offsetTop - 150) {
           $('.active').removeClass('active');
           anchorElements.each(function (anchor) {
             var anchorElement = $(anchorElements.get(anchor))

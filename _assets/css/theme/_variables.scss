@@ -6,24 +6,25 @@ $max-width-medium: 85%;
 
 /* Breakpoints*/
 $breakpoint: "only screen and (min-width: 60em)";
+$breakpoint-fontsize: "only screen and (min-width: 75em)";
 
 $font-family: "Raleway", sans-serif;
 $font-size-base: 1rem !default;
-$font-size-base-large: 1.25rem !default;
+$font-size-base-large: 1.2rem !default;
 $font-size-h1: 2.5rem !default;
 $font-weight-strong: 700;
 $font-weight-base: 400;
 $base-line-height: 1.5rem;
 $nav-foot-height: 3rem;
-$text-color-darkmode: #FFFFFF !default;
+$text-color-darkmode: #ffffff !default;
 $text-color-lightmode: #070707 !default;
 $bg-color-darkmode: #202020;
-$bg-color-lightmode: #EEEEEE;
+$bg-color-lightmode: #eeeeee;
 $highlight-color-darkmode: #b80c00;
 $highlight-color-lightmode: #711506;
-$secondary-color: #B3B3B3;
+$secondary-color: #b3b3b3;
 $primary-color-lightmode: #b90e02;
 $primary-color-darkmode: #d32418;
-$banner-background-lightmode: #C5C5C5;
-$banner-background-darkmode:#686767;
-$banner-text-color: #711506
+$banner-background-lightmode: #c5c5c5;
+$banner-background-darkmode: #686767;
+$banner-text-color: #711506;

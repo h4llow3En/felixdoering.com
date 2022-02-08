@@ -34,10 +34,4 @@ Aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, d
 
 Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit widersprochen. Wir behalten uns ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-E-Mails, vor.
 
-### Google Web Fonts
-
-Unsere Website verwendet Web Fonts von Google. Anbieter ist die Google Inc., 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA.  
-Durch den Einsatz dieser Web Fonts wird es möglich Ihnen die von uns gewünschte Darstellung unserer Website zu präsentieren, unabhängig davon welche Schriften Ihnen lokal zur Verfügung stehen. Dies erfolgt über den Abruf der Google Web Fonts von einem Server von Google in den USA und der damit verbundenen Weitergabe Ihre Daten an Google. Dabei handelt es sich um Ihre IP-Adresse und welche Seite Sie bei uns besucht haben. Der Einsatz von Google Web Fonts erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Als Betreiber dieser Website haben wir ein berechtigtes Interesse an der optimalen Darstellung und Übertragung unseres Webauftritts.  
-Das Unternehmen Google ist für das us-europäische Datenschutzübereinkommen "Privacy Shield" zertifiziert. Dieses Datenschutzübereinkommen soll die Einhaltung des in der EU geltenden Datenschutzniveaus gewährleisten.  
-Einzelheiten über Google Web Fonts finden Sie unter: [https://www.google.com/fonts#AboutPlace:about](https://www.google.com/fonts#AboutPlace:about){:target="_blank"} und weitere Informationen in den Datenschutzbestimmungen von Google: [https://policies.google.com/privacy/partners?hl=de](https://policies.google.com/privacy/partners?hl=de){:target="_blank"}  
 <small>Quellen: [mein-datenschutzbeauftragter.de](http://www.mein-datenschutzbeauftragter.de){:target="_blank"}, [e-recht24.de](http://e-recht24.de){:target="_blank"}</small>

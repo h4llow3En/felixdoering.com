@@ -4,5 +4,14 @@ layout: base
 
 {% include banner.html banner=page.banner%}
 <main>
-  {{ content }}
+  <div class="content">
+    <div class="page">
+      {{ content }}
+    </div>
+    {% if page.side %}
+    <div class="side">
+      {% include {{page.side}} %}
+    </div>
+    {% endif %}
+  </div>
 </main>
