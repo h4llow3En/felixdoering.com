@@ -16,3 +16,9 @@ imprint: " "
 link_extern: "Externer Link:"
 
 published_at: Veröffentlicht am
+
+images:
+  old_main: Die alte Hauptseite
+  old_about_me: Die alte "Über mich"-Seite mit nur sehr wenig Inhalt
+
+continue: Weiter lesen

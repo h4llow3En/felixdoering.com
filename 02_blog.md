@@ -4,4 +4,6 @@ layout: page
 permalink: /blog
 ---
 
-# {% t titles.blog %}
+{% tf pages/blog.md %}
+
+{% include posts.html %}

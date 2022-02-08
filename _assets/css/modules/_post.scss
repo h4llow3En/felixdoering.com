@@ -1,7 +1,40 @@
 .postimage {
   display: block;
-  // width: 100%;
-  width: auto;
-  height: 20vh;
+  width: 100%;
+}
+
+.published {
+  font-size: 75%;
+}
+
+.side {
+  figcaption {
+    text-align: center;
+    font-size: 75%;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.post-collection {
+  margin-top: 2rem;
+}
+
+.post {
+  text-decoration: none;
+  .post-tilte {
+    font-size: 125%;
+  }
+  .post-date {
+    font-size: 75%;
+    color: $secondary-color;
+    margin-left: 0.5rem;
+  }
+  .post-teaser {
+    color: $text-color-darkmode;
+    @media screen and (prefers-color-scheme: light) {
+      color: $text-color-lightmode;
+    }
+  }
 
 }

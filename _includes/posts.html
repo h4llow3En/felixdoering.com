@@ -1,0 +1,18 @@
+<div class="post-collection">
+  {% for post in site.posts %}
+  <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">
+    <article class="post">
+      <span class="post-tilte">{{ post.title }}</span>
+      <span class="post-date">({% if site.lang != "en" %}
+        {{ post.date | date: "%d.%m.%Y"}}
+        {% else %}
+        {{ post.date | date_to_string}}
+        {% endif %})</span><br>
+      <span class="post-teaser">{{ post.excerpt | strip_html | truncate: 300, ' …' }}</span> >> {% t continue %}
+    </article>
+  </a>
+  {% if forloop.last != true %}
+  <hr>{% endif %}
+  <hr>
+  {% endfor %}
+</div>

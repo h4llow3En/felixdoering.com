@@ -22,6 +22,7 @@
 
 .side {
   margin-top: 2rem;
+  align-items: center;
   @media #{$breakpoint} {
     // margin-top: 0;
     float: inline-end;

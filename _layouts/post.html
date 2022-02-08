@@ -11,7 +11,7 @@ layout: compress
     <h1 id="{{ page.title | downcase | replace: ' ', '-'}}">{{ page.title }}</h1>
     <div class="content">
       <div class="page{% if page.images %} two-col{% endif %}">
-        <p>{% t published_at %} {% if site.lang != "en" %}
+        <p class="published">{% t published_at %} {% if site.lang != "en" %}
           {{ page.date | date: "%d.%m.%Y"}}
           {% else %}
           {{ page.date | date_to_string}}
@@ -21,7 +21,10 @@ layout: compress
       {% if page.images %}
       <div class="side">
         {% for image in page.images %}
+        <figure>
           {% asset {{image.file}} vips:format='.webp' alt="{{ image.alt }}" class="postimage" %}
+          <figcaption>{% t image.description %}</figcaption>
+        </figure>
         {% endfor %}
       </div>
       {% endif %}

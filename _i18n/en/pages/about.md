@@ -12,4 +12,4 @@ Unfortunately, I had to end my studies prematurely, but I still didn't want to g
 After successfully completing my training, I specialised in the field of DevOps. The term DevOps refers to a combination of *development*, i.e. the development of applications, and *IT operations*, i.e. the provision and operation of these.  
 
 I'm currently pushing this field forward in addition to backend programming in Python and Kotlin/Java and hardware-related programming in C and C++.  
-If I can find some time besides my private projects, I create playlists together with Christoph Kepler.
+If I can find some time besides my personal projects, I create playlists together with Christoph Kepler.

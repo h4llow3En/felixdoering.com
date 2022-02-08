@@ -1,6 +1,6 @@
----
-title: titles.projects
-layout: page
-permalink: /projects
----
+#---
+#title: titles.projects
+#layout: page
+#permalink: /projects
+#---
 
