@@ -18,7 +18,7 @@ exclude_from_localizations: ["assets"]
 collections:
   posts:
     output: true
-    permalink: /blog/:title
+    permalink: /blog/:title/
 
 assets:
   source_maps: true
