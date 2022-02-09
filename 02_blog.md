@@ -1,7 +1,7 @@
 ---
 title: titles.blog
 layout: page
-permalink: /blog
+permalink: /blog/
 ---
 
 {% tf pages/blog.md %}
