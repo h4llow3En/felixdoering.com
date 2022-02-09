@@ -17,6 +17,7 @@ services:
       - "traefik.http.routers.felixdoering-secure.tls=true"
       - "traefik.http.routers.felixdoering-secure.tls.certresolver=letsencrypt"
       - "traefik.http.routers.felixdoering-secure.service=felixdoering"
+      - "traefik.http.routers.felixdoering-secure.middlewares=traefik-auth"
       - "traefik.http.services.felixdoering.loadbalancer.server.port=80"
 
 networks:
