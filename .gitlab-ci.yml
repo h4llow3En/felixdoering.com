@@ -1,12 +1,22 @@
-Build Page:
+Build felixdoering.com:
+  image:
+    name: gcr.io/kaniko-project/executor:debug
+    entrypoint: [""]
   stage: build
-  image: jekyll/builder
+  before_script:
+    - mkdir -p /kaniko/.docker
+    - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
   script:
-    - chmod +x ci-build.sh
-    - ./ci-build.sh
-  artifacts:
-    paths:
-    - _site
-    expire_in: 1 week
+    - /kaniko/executor --context $CI_PROJECT_DIR/felixdoering.com --dockerfile $CI_PROJECT_DIR/Dockerfile --destination $CI_REGISTRY_IMAGE:latest  --cache=true
+
+Deploy felixdoering.com:
+  image: registry.sweetwater.cloud/infrastructure/docker-deploy-helper/docker-compose
+  stage: deploy
+  before_script:
+    - echo "$SSH_DEPLOY_KEY" | tr -d '\r' | ssh-add -
+  script:
+    - remote-connect $TARGET_USER@$TARGET_HOST
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    - docker-compose -f docker-compose.yml pull && docker-compose -f docker-compose.yml up -d
   only:
     - main

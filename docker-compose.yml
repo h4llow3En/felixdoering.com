@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  felixdoering:
+    image: registry.sweetwater.cloud/infrastructure/felixdoering.com:latest
+    restart: always
+    container_name: felixdoering.com_dev
+    networks:
+      - web
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.felixdoering.entrypoints=http"
+      - "traefik.http.routers.felixdoering.rule=Host(`dev.felixdoering.com`)"
+      - "traefik.http.routers.felixdoering.middlewares=secured@file"
+      - "traefik.http.routers.felixdoering-secure.entrypoints=https"
+      - "traefik.http.routers.felixdoering-secure.rule=Host(`dev.felixdoering.com`)"
+      - "traefik.http.routers.felixdoering-secure.tls=true"
+      - "traefik.http.routers.felixdoering-secure.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.felixdoering-secure.service=felixdoering"
+      - "traefik.http.services.felixdoering.loadbalancer.server.port=80"
