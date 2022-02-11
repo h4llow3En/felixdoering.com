@@ -21,12 +21,12 @@
           {% if navpage.title != "titles.error" and navpage.title != "titles.imprint" and navpage.title !=
           "titles.privacy" %}
           <li {% if page.title==navpage.title %}class="active" {% endif %}>
-            <a href="{{ navpage.url | prepend: site.baseurl }}" title="{% t navpage.title %}">{% t navpage.title %}</a>
+            <a rel="canonical" href="{{ navpage.url | prepend: site.baseurl }}" title="{% t navpage.title %}">{% t navpage.title %}</a>
           </li>
           {% if navpage.anchors %}
           {% for anchor in navpage.anchors %}
           <li class="anchorlink">
-            <a href="{{ navpage.url | prepend: site.baseurl }}#{{ anchor }}" title="{% t titles.{{anchor}} %}">{% t titles.{{anchor}} %}</a>
+            <a rel="canonical" href="{{ navpage.url | prepend: site.baseurl }}#{{ anchor }}" title="{% t titles.{{anchor}} %}">{% t titles.{{anchor}} %}</a>
           </li>
           {% endfor %}
           {% endif %}
@@ -36,7 +36,7 @@
           <li class="language">
             {% for language in site.languages %}
             <div>{% capture href%}{{ site.baseurl_root }}{% if forloop.first != true %}/{{ language }}{% endif %}{{
-              page.url}}{%endcapture %}{% if site.lang == language %}{{ language | upcase }}{% else %}<a
+              page.url}}{%endcapture %}{% if site.lang == language %}{{ language | upcase }}{% else %}<a rel="canonical"
                 href="{{ href }}" title="{{ language | upcase }}">{{ language | upcase }}</a>{% endif %}{% if
               forloop.last != true %}&nbsp;|&nbsp;{% endif %}</div>
             {% endfor %}

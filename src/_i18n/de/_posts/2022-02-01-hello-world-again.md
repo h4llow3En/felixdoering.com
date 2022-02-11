@@ -9,6 +9,7 @@ images:
   - file: old_about_me.png
     alt: Screenshot old about me page
     description: images.old_about_me
+description: description.hello-world
 ---
 Warum erstellen Menschen ihre eigenen Websites? Entweder um sich selbst zu promoten oder um ihre Geschichten in Form eines Blogs zu erzählen.  
 Doch was möchte ich mit meiner Website erreichen? Die vorherige Version war ein reiner Blog und eine Sammlung an Projekten, an denen ich irgendwann gearbeitet habe. Zudem ist der vorangegangene Blogeintrag bereits über vier Jahre her und mein Schreibstil hat sich geändert.  

@@ -3,14 +3,38 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, init-scale=1">
 
-  <title>{% if include.title %}{{ include.title }}{% else %}{% t page.title %}{% endif %}</title>
+  <title>Felix Döring - {% if include.title %}{{ include.title }}{% else %}{% t page.title %}{% endif %}</title>
   <meta name="description"
-    content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 300 }}{% else %}{% t description.page %}{% endif %}">
+    content="{% if page.description %}{% t page.description %}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 300 }}{% else %}{% t description.page %}{% endif %}">
+
+  <!-- Open Graph tags -->
+  <meta property="og:locale" content="{% if site.lang == " en" %}en_US{% else %}de_DE{% endif %}">
+  <meta property="og:title" content="{% if include.title %}{{ include.title }}{% else %}{% t page.title %}{% endif %}">
+  <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url}}">
+  <meta property="og:site_name" content="Felix Döring - felixdoering.com">
+  {% if page.layout == "post" %}
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="{{ page.date }}" />
+  <meta property="article:publisher" content="https://www.facebook.com/h4ll0w3En" />
+  <meta property="article:author" content="https://www.facebook.com/h4ll0w3En" />
+  <meta property="og:description"
+    content="{% if page.description %}{% t page.description %}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 300 }}{% else %}{% t description.page %}{% endif %}">
+  {% else %}
+  <meta property="og:type" content="website">
+  {% endif %}
+
+  <!-- Twitter Card tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{% if include.title %}{{ include.title }}{% else %}{% t page.title %}{% endif %}">
+  <meta name="twitter:description"
+    content="{% if page.description %}{% t page.description %}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 300 }}{% else %}{% t description.page %}{% endif %}">
+  <meta name="twitter:site" content="@Felix_Doering" />
+  <meta name="twitter:creator" content="@Felix_Doering">
 
   {% for link in site.data.icons.link %}
-  <link {% for item in link %}
-    {{ item[0] }}="{% if item[0] == 'href' %}{{ item[1]  | prepend: site.baseurl_root }}{% else %}{{ item[1] }}{% endif %}"
-    {% endfor %}>
+  <link {% for item in link %} {{ item[0]
+    }}="{% if item[0] == 'href' %}{{ item[1]  | prepend: site.baseurl_root }}{% else %}{{ item[1] }}{% endif %}" {%
+    endfor %}>
   {% endfor %}
 
   {% for link in site.data.icons.meta %}

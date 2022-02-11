@@ -2,6 +2,7 @@
 title: titles.blog
 layout: page
 permalink: /blog/
+description: description.blog
 ---
 
 {% tf pages/blog.md %}

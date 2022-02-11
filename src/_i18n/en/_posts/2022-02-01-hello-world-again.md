@@ -9,6 +9,7 @@ images:
   - file: old_about_me.png
     alt: Screenshot old about me page
     description: images.old_about_me
+description: description.hello-world
 ---
 
 Why do people create their own websites? Either to promote themselves or to tell their stories in blog form.  

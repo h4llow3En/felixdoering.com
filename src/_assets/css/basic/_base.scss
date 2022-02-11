@@ -21,6 +21,7 @@ h6 {
 }
 
 h1 {
+  line-height: $h1-line-height;
   @media #{$breakpoint} {
     font-size: $font-size-h1;
   }

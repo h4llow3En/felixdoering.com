@@ -10,6 +10,10 @@ titles:
 
 description:
   page: Felix Döring - Full Stack Developer in Dresden, Germany
+  blog: Collections of all my blog articles
+  timemachine: Tutorial for creating a TimeMachine network volume on Ubuntu server
+  hello-world: My website sees the light of day in a new guise. With a focus towards a portfolio, away from a pure blog.
+  duties: Short blog post about extracting the current user in the programming language Rust
 
 imprint: "German law demands the following information."
 
@@ -21,4 +25,4 @@ images:
   old_main: Old main page
   old_about_me: Old about me with very little content
 
-continue: continue reading
+continue: continue&nbsp;reading
