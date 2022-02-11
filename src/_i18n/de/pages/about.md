@@ -1,4 +1,4 @@
-# Hi, ich bin Felix {#about-me}
+# Hi, ich bin Felix Döring {#about-me}
 
 Mein Name ist Felix Döring und ich bin Anwendungsentwickler – und zwar aus Leidenschaft, stets auf der Suche nach herausfordernden Problemlösungen.  
 Ich beschäftige mich mit IT-Architekturen und Softwareentwicklung auf allen Ebenen, von der Konzeption bis zur Softwareimplementierung.

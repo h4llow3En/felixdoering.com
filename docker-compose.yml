@@ -10,10 +10,10 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.felixdoering.entrypoints=http"
-      - "traefik.http.routers.felixdoering.rule=Host(`felixdoering.com`)"
+      - "traefik.http.routers.felixdoering.rule=Host(`www.felixdoering.com`,`felixdoering.com`)"
       - "traefik.http.routers.felixdoering.middlewares=secured@file"
       - "traefik.http.routers.felixdoering-secure.entrypoints=https"
-      - "traefik.http.routers.felixdoering-secure.rule=Host(`felixdoering.com`)"
+      - "traefik.http.routers.felixdoering-secure.rule=Host(`www.felixdoering.com`,`felixdoering.com`)"
       - "traefik.http.routers.felixdoering-secure.tls=true"
       - "traefik.http.routers.felixdoering-secure.tls.certresolver=letsencrypt"
       - "traefik.http.routers.felixdoering-secure.service=felixdoering"
