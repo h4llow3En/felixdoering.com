@@ -11,5 +11,5 @@ The rest was pure logic: Computer science courses in high school and then studie
 Unfortunately, I had to end my studies prematurely, but I still didn't want to give up my dream of becoming a computer scientist. That's why I applied for an apprenticeship with my current employer, 3m5. Media GmbH in my adopted city of Dresden.  
 After successfully completing my training, I specialised in the field of DevOps. The term DevOps refers to a combination of *development*, i.e. the development of applications, and *IT operations*, i.e. the provision and operation of these.  
 
-I'm currently pushing this field forward in addition to backend programming in Python and Kotlin/Java and hardware-related programming in C and C++.  
+At work I'm currently pushing this field forward in addition to backend programming in Python and Kotlin/Java and hardware-related programming in C and C++.  
 If I can find some time besides my personal projects, I create playlists together with Christoph Kepler.
