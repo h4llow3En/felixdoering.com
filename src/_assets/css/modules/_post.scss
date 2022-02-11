@@ -20,6 +20,10 @@
   margin-top: 2rem;
 }
 
+.post-divider {
+  margin: 1rem 0;
+}
+
 .post {
   text-decoration: none;
   .post-tilte {
@@ -36,5 +40,4 @@
       color: $text-color-lightmode;
     }
   }
-
 }
