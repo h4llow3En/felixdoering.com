@@ -2,34 +2,34 @@ link:
   -
     rel: apple-touch-icon
     sizes: 180x180
-    href: /assets/icons/apple-touch-icon.png
+    href: /apple-touch-icon.png
   -
     rel: icon
     type: image/png
     sizes: 32x32
-    href: /assets/icons/favicon-32x32.png
+    href: /favicon-32x32.png
   -
     rel: icon
     type: image/png
     sizes: 16x16
-    href: /assets/icons/favicon-16x16.png
+    href: /favicon-16x16.png
   -
     rel: manifest
-    href: /assets/icons/site.webmanifest
+    href: /site.webmanifest
   -
     rel: mask-icon
-    href: /assets/icons/safari-pinned-tab.svg
-    color: #171506
+    href: /safari-pinned-tab.svg
+    color: "#171506"
   -
     rel: shortcut icon
-    href: /assets/icons/favicon.ico
+    href: /favicon.ico
 meta:
   -
     name: msapplication-TileColor
-    content: #2b5797
+    content: "#2b5797"
   -
     name: msapplication-config
-    content: /assets/icons/browserconfig.xml
+    content: /browserconfig.xml
   -
     name: theme-color
-    content: #ffffff
+    content: "#ffffff"

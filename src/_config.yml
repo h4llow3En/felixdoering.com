@@ -13,7 +13,19 @@ social:
   linkedin: https://de.linkedin.com/in/felix-döring-7455a6204
 
 languages: ["en", "de"]
-exclude_from_localizations: ["assets", "favicon.ico", "robots.txt"]
+exclude_from_localizations:
+  - "assets"
+  - "favicon.ico"
+  - "robots.txt"
+  - "android-chrome-192x192.png"
+  - "android-chrome-512x512.png"
+  - "apple-touch-icon.png"
+  - "browserconfig.xml"
+  - "favicon-16x16.png"
+  - "favicon-32x32.png"
+  - "mstile-150x150.png"
+  - "safari-pinned-tab.svg"
+  - "site.webmanifest"
 
 markdown:    kramdown
 highlighter: rouge
