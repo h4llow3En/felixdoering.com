@@ -3,6 +3,10 @@ Build felixdoering.com:
     name: gcr.io/kaniko-project/executor:debug
     entrypoint: [""]
   stage: build
+  cache:
+    key: ${CI_PROJECT_NAME}
+    paths:
+      - src/_site
   before_script:
     - mkdir -p /kaniko/.docker
     - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
