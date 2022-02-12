@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Erinnerne mich an meine Pflichten
+title:  Erinnere mich an meine Pflichten
 description: description.duties
 date:   2016-10-27 11:07:00
 ---
@@ -16,7 +16,7 @@ Wie kommt man an den vollen Namen des aktuellen Benutzers? Denn es wäre eigentl
 Man könnte ``finger `whoami` `` verwenden, um an die Informationen des Nutzers zu gelangen, jedoch möchte ich ungern einen extra Subprozess dafür spawnen.  
 Es gibt einen weiteren Weg: die libc-Bibtiothek.
 
-Es hat mich einiges an Zeit gekostet, ein zufriedenstellendes Resultat zu erhalten, doch letztendlich bin ich zum folgenden Ergebnis gekommen:
+Es hat mich einiges an Zeit gekostet, ein zufriedenstellendes Resultat zu erhalten, doch letztendlich bin ich zu folgenden Ergebnis gekommen:
 
 ```rust
 extern crate libc;
