@@ -4,7 +4,7 @@ services:
   felixdoering:
     image: registry.sweetwater.cloud/infrastructure/felixdoering.com:latest
     restart: always
-    container_name: felixdoering.com_dev
+    container_name: felixdoering.com
     networks:
       - web
     labels:
