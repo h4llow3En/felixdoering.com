@@ -1,7 +1,11 @@
 # Hi, I'm Felix Döring {#about-me}
 
+## Who am I?
+
 My name is Felix Döring and I am a software developer - and that out of passion, always in search of challenging problems.  
 I deal with IT architectures and software development at all levels, from conception to implementation.
+
+## My story
 
 What to tell about me? - Sometimes prophecies come true.  
 When I sat in front of my computer in my childhood, I must have made a very enthusiastic and curious impression. Because a family friend predicted a career in IT for me.  

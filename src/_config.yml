@@ -26,7 +26,6 @@ exclude_from_localizations:
   - "mstile-150x150.png"
   - "safari-pinned-tab.svg"
   - "site.webmanifest"
-  - "keybase.txt"
 
 markdown:    kramdown
 highlighter: rouge

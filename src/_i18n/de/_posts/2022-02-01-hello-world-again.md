@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hallo neue alte Welt
-date:   2022-02-01 12:00:00
+date:   2022-02-01 12:00:00+01:00
 images:
   - file: old_main.png
     alt: Screenshot old main page
@@ -11,9 +11,14 @@ images:
     description: images.old_about_me
 description: description.hello-world
 ---
+
+## Meine Überlegungen zu der alten Website
+
 Warum erstellen Menschen ihre eigenen Websites? Entweder um sich selbst zu promoten oder um ihre Geschichten in Form eines Blogs zu erzählen.  
 Doch was möchte ich mit meiner Website erreichen? Die vorherige Version war ein reiner Blog und eine Sammlung an Projekten, an denen ich irgendwann gearbeitet habe. Zudem ist der vorangegangene Blogeintrag bereits über vier Jahre her und mein Schreibstil hat sich geändert.  
 Aus diesem Grund möchte ich nun den Hauptfokus vom Blog wegziehen, aber nichtsdestotrotz versuchen ihn etwas aktiver weiterzuführen als zuvor.
+
+## Die neue Website
 
 Was bleibt also übrig, was verändert sich und was soll noch kommen?  
 Es bleibt meine Website, nur rückt ihr Zweck inzwischen in Richtung Präsentation meiner Person. Auch gefiel mir mein vorheriges Design nicht mehr, es war zu steril, zu leer. Das Aktuelle bietet, obwohl es immer noch schlicht gehalten ist, meiner Meinung mach mehr Eleganz.  

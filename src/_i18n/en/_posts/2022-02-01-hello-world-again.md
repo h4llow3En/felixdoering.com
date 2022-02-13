@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello new old world
-date:   2022-02-01 12:00:00
+date:   2022-02-01 12:00:00+01:00
 images:
   - file: old_main.png
     alt: Screenshot old main page
@@ -12,9 +12,13 @@ images:
 description: description.hello-world
 ---
 
+## My reflections on the old website
+
 Why do people create their own websites? Either to promote themselves or to tell their stories in blog form.  
 But what would I like to achieve with my website? The previous iteration was a pure blog and a collection of projects I was working on at some point. Also the preceding blog entry was over four years ago and my style of writing has changed.
 For this reason, I would now like to pull the main focus away from the blog, but nevertheless try to keep it somewhat more active than before.
+
+## The new website
 
 So what remains, what changes and what has yet to come?  
 It remains my website, but its purpose has now shifted towards presenting myself. I also no longer liked my previous design, it was too sterile, too empty. The current one, although still simple, is more elegant in my opinion.  

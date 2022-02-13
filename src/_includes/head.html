@@ -12,13 +12,16 @@
   <meta property="og:title" content="{% if include.title %}{{ include.title }}{% else %}{% t page.title %}{% endif %}">
   <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url}}">
   <meta property="og:site_name" content="Felix Döring - felixdoering.com">
+  <meta property="og:description"
+    content="{% if page.description %}{% t page.description %}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 300 }}{% else %}{% t description.page %}{% endif %}">
+  <meta property="og:image" content="{{ site.url }}/og-logo.png">
+  <meta property="og:image:height" content="1200px">
+  <meta property="og:image:width" content="630px">
   {% if page.layout == "post" %}
   <meta property="og:type" content="article">
   <meta property="article:published_time" content="{{ page.date }}" />
   <meta property="article:publisher" content="https://www.facebook.com/h4ll0w3En" />
   <meta property="article:author" content="https://www.facebook.com/h4ll0w3En" />
-  <meta property="og:description"
-    content="{% if page.description %}{% t page.description %}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 300 }}{% else %}{% t description.page %}{% endif %}">
   {% else %}
   <meta property="og:type" content="website">
   {% endif %}

@@ -1,15 +1,15 @@
 titles:
-  home: Home
+  home: Homepage
   about-me: Über mich
   blog: Blog
   projects: Projekte
   playlists: Playlisten
-  error: "404"
+  error: 404 - Seite nicht gefunden
   privacy: Datenschutzerklärung
   imprint: Impressum
 
 description:
-  page: Felix Döring - Full Stack Developer aus Dresden
+  page: Felix Döring - Ich bin Felix, ein Full Stack Developer aus Dresden
   blog: Eine Sammlung all meiner Blog-Artikel
   timemachine: Tutorial zum Erstellen eines TimeMachine Netzwerk Volumes auf einem Ubuntu Server.
   hello-world: Mein Website erblickt im neune Gewand das Licht der Welt. Mit einem Fokus in Richtung Portfolio, weg vom reinem Blog.
