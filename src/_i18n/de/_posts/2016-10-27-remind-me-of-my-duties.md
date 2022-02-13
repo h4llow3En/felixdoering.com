@@ -10,7 +10,7 @@ Wir haben vor einer Weile begonnen, das ursprünglich auf Python basierende Proj
 
 Diese Idee war der Beginn von [tdo-notify](https://github.com/tdolist/tdo-notify), einem Tool was via Cronjob ausgeführt einmal täglich eine Erinnerung schickt.  
 Da Rust und Swift relativ ähnlich sind, war es für mich ein wenig schwierig, sich an den richtigen Syntax zu erinnern. Zudem machte mir der Borrow-Checker Schwierigkeiten.
-Aber nach dem Durchforsten der Dokumentationen unterschiedlichster Crates habe ich eine Version herausgearbeitet, die funktioniert. Nichts persönlichen mit drin, nur die reinen Aufgaben, kein schöner initialer Satz dazu.
+Aber nach dem Durchforsten der Dokumentationen unterschiedlichster Crates habe ich eine Version herausgearbeitet, die funktioniert. Nichts persönliches mit drin, nur die reinen Aufgaben, kein schöner initialer Satz dazu.
 
 Wie kommt man an den vollen Namen des aktuellen Benutzers? Denn es wäre eigentlich schön, wenn die Mail auch eine Begrüßung beinhalten würde.  
 Man könnte ``finger `whoami` `` verwenden, um an die Informationen des Nutzers zu gelangen, jedoch möchte ich ungern einen extra Subprozess dafür spawnen.  
