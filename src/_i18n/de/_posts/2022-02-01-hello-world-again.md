@@ -3,13 +3,15 @@ layout: post
 title: Hallo neue alte Welt
 date:   2022-02-01 12:00:00+01:00
 images:
-  - file: old_main.png
+  - file: posts/hello_world/old_main.png
     alt: Screenshot old main page
     description: images.old_main
-  - file: old_about_me.png
+  - file: posts/hello_world/old_about_me.png
     alt: Screenshot old about me page
     description: images.old_about_me
 description: description.hello-world
+teaser: |
+  Warum erstellen Menschen ihre eigenen Websites? Entweder um sich selbst zu promoten oder um ihre Geschichten in Form eines Blogs zu erzählen. Doch was möchte ich mit meiner Website erreichen? Die vorherige Version war ein reiner Blog und eine Sammlung an Projekten, an denen ich irgendwann gearbeitet habe. Zudem ist der vorangegangene Blogeintrag bereits über vier Jahre her und mein Schreibstil hat sich geändert. Aus diesem Grund möchte ich nun den Hauptfokus vom Blog wegziehen, aber nichtsdestotrotz versuchen ihn etwas aktiver weiterzuführen als zuvor.
 ---
 
 ## Meine Überlegungen zu der alten Website

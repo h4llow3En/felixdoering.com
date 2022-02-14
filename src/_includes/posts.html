@@ -8,7 +8,7 @@
         {% else %}
         {{ post.date | date_to_string}}
         {% endif %})</span><br>
-      <span class="post-teaser">{{ post.excerpt | strip_html | truncate: 300, '...' }}</span> &nbsp;&nbsp;>>&nbsp;{% t continue %}
+      <span class="post-teaser">{{ post.teaser | truncate: 300, '...' }}</span> &nbsp;&nbsp;>>&nbsp;{% t continue %}
     </article>
   </a>
   {% if forloop.last != true %}

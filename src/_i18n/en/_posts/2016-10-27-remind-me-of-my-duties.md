@@ -3,6 +3,8 @@ layout: post
 title:  Remind me of my duties
 description: description.duties
 date:   2016-10-27 11:07:00+01:00
+teaser: |
+  It felt like a long time ago when Felix and I built the terminal todo list tdo. But now there was time to build something new! We started to rewrite this original Pyhon based project in Rust a while ago, but in between I had no time to practice this language at all. So I tried to teach myself again on a different project. A notification service should be good. I want to get a mail with all my tasks.
 ---
 
 It felt like a long time ago when Felix and I built the terminal todo list [tdo](http://tdolist.de). But now there was time to build something new!  

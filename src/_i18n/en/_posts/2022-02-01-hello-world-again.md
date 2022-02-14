@@ -3,13 +3,15 @@ layout: post
 title: Hello new old world
 date:   2022-02-01 12:00:00+01:00
 images:
-  - file: old_main.png
+  - file: posts/hello_world/old_main.png
     alt: Screenshot old main page
     description: images.old_main
-  - file: old_about_me.png
+  - file: posts/hello_world/old_about_me.png
     alt: Screenshot old about me page
     description: images.old_about_me
 description: description.hello-world
+teaser: |
+  Why do people create their own websites? Either to promote themselves or to tell their stories in blog form. But what would I like to achieve with my website? The previous iteration was a pure blog and a collection of projects I was working on at some point. Also the preceding blog entry was over four years ago and my style of writing has changed. For this reason, I would now like to pull the main focus away from the blog, but nevertheless try to keep it somewhat more active than before.
 ---
 
 ## My reflections on the old website
