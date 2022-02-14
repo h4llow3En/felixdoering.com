@@ -22,13 +22,19 @@
 }
 
 .bannerimage {
+  position: absolut;
   height: 100%;
   width: 100%;
   object-fit: cover;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 
-  @media #{$breakpoint} {
-    width: auto;
-    clip-path: polygon(0 0, 100% 0%, 100% 100%, 25% 100%);
+    @media #{$breakpoint} {
+      width: auto;
+      clip-path: polygon(0 0, 100% 0%, 100% 100%, 25% 100%);
+    }
   }
 }
 
