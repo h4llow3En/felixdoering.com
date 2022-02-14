@@ -3,7 +3,7 @@ layout: post
 title:  "Alles neu"
 date:   2016-04-14 10:54:40+01:00
 teaser: |
-  I wanted to have a more serious design the old one was just the standard Jekyll theme with some minor changes. It just was unready. The colors didn't match and all in all there was no personal style at all. And why in English? I write my programs (almost) in English and I think it is a much cleaner look if I just do everything in the same language. Maybe I will translate my old posts, but I am not sure yet. I started and tried to translate the first ones, but then I thought it might be not a problem to see the beginnings of my blog (well, the second attempt).
+  Ich wollte ein seriöseres Design haben. Das Alte war nur das Standard-Jekyll-Theme mit einigen kleinen Änderungen. Es sah einfach unfertig aus. Die Farben passten nicht zusammen und alles in allem gab es keinen persönlichen Stil. Und warum auf Englisch? Ich schreibe meine Anwendungen (fast immer) auf Englisch, und ich denke, es sieht viel sauberer aus, wenn ich alles in der gleichen Sprache mache. Vielleicht werde ich meine alten Beiträge übersetzen, aber ich bin mir noch nicht sicher. Ich habe angefangen und versucht, die ersten zu übersetzen, aber dann dachte ich, dass es kein Problem sein könnte, die Anfänge meines Blogs zu sehen. Und nun auf zum zweiten Versuch.
 ---
 ## Alles sieht so neu aus
 
