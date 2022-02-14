@@ -12,6 +12,7 @@ images:
 description: description.hello-world
 teaser: |
   Why do people create their own websites? Either to promote themselves or to tell their stories in blog form. But what would I like to achieve with my website? The previous iteration was a pure blog and a collection of projects I was working on at some point. Also the preceding blog entry was over four years ago and my style of writing has changed. For this reason, I would now like to pull the main focus away from the blog, but nevertheless try to keep it somewhat more active than before.
+tags: relaunch, tracktor, playlist, api
 ---
 
 ## My reflections on the old website

@@ -12,6 +12,7 @@ images:
 description: description.hello-world
 teaser: |
   Warum erstellen Menschen ihre eigenen Websites? Entweder um sich selbst zu promoten oder um ihre Geschichten in Form eines Blogs zu erzählen. Doch was möchte ich mit meiner Website erreichen? Die vorherige Version war ein reiner Blog und eine Sammlung an Projekten, an denen ich irgendwann gearbeitet habe. Zudem ist der vorangegangene Blogeintrag bereits über vier Jahre her und mein Schreibstil hat sich geändert. Aus diesem Grund möchte ich nun den Hauptfokus vom Blog wegziehen, aber nichtsdestotrotz versuchen ihn etwas aktiver weiterzuführen als zuvor.
+tags: relaunch, tracktor, playlist, api
 ---
 
 ## Meine Überlegungen zu der alten Website
