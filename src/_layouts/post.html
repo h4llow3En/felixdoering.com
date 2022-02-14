@@ -21,8 +21,8 @@ layout: compress
       {% if page.images %}
       <div class="side">
         {% for image in page.images %}
-        <figure class="postimage" >
-          {% asset {{image.file}} vips:format='.webp' alt="{{ image.alt }}"%}
+        <figure>
+          {% asset {{image.file}} vips:format='.webp' alt="{{ image.alt }}" class="postimage" %}
           <figcaption>{% t image.description %}</figcaption>
         </figure>
         {% endfor %}

@@ -29,9 +29,7 @@
       {% endif %}
     </div>
   </div>
-  <div class="bannerimage">
-  {% asset {{banner.image}} vips:format='.webp' alt="{{ banner.alt }}"%}
-  </div>
+  {% asset {{banner.image}} vips:format='.webp' alt="{{ banner.alt }}" class="bannerimage"%}
   {% endif %}
   {% endfor %}
 </div>
