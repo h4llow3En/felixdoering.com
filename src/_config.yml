@@ -4,7 +4,7 @@ url: "felixdoering.com"
 email:
   address: mail@felixdoering.com
   gpg:
-    path: /assets/gpg/Felix_Döring_BDF33B31.asc
+    path: /assets/gpg/Felix-Döring-BDF33B31.asc
     fprint: EF47 E6C7 B7A2 7022 BB02  3243 3F36 9D08 BDF3 3B31
 social:
   twitter: https://twitter.com/Felix_Doering
