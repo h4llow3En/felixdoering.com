@@ -47,7 +47,7 @@ assets:
   source_maps: false
   destination: "/assets"
   compression: true
-  digest: false
+  digest: true
   gzip: true
 
   compress:
