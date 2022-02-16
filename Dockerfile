@@ -3,7 +3,7 @@ FROM jekyll/builder:4 as builder
 COPY src /build
 WORKDIR /build
 
-RUN jekyll build --verbose
+RUN env JEKYLL_ENV=production jekyll build
 WORKDIR /build/_site
 
 COPY script/sitemap.sh ./sitemap.sh
