@@ -4,7 +4,7 @@ title:  Erinnere mich an meine Pflichten
 description: description.duties
 date:   2016-10-27 11:07:00+01:00
 teaser: |
-  Es ist gefühlt bereits eine Ewigkeit her, dass Felix und ich gemeinsam unsere Todo-Liste für das Terminal gebaut haben (tdo). Nun ist es an der Zeit, etwas Neues anzugehen. Wir haben vor einer Weile begonnen, das ursprünglich auf Python basierende Projekt in Rust neu zu schreiben. Jedoch hatte ich in der Zwischenzeit keine Zeit, mich selbst weiter in dieser Sprache zu üben. Also versuche ich in verschiedenen kleineren Projekten weiter zu lernen. Ein Service, welcher in irgendeiner Art Benachrichtigungen sendet, wäre nicht schlecht. Ich hätte gerne Mails mit meinen noch zu erledigenden Aufgaben.
+  Es ist gefühlt bereits eine Ewigkeit her, dass Felix und ich gemeinsam unsere Todo-Liste für das Terminal gebaut haben (tdo). Nun ist es an der Zeit, etwas Neues anzugehen...
 tags: rust, tdo, libc 
 ---
 

@@ -4,7 +4,7 @@ title:  Man bringe mir eine Zeitmaschine
 description: description.timemachine
 date:   2018-01-22 17:45:00+01:00
 teaser: |
-  Mir gefällt die Idee von Apples TimeMachine-Backups sehr gut. Man schließt ein externes Speichermedium an oder verwenden einen Teil des internen Speichers. Ein bequemerer Weg ist die Erstellung von Backups mit einer TimeCapsule oder einem TimeMachine-Netzwerklaufwerk. Sobald man mit dem heimischen WiFi verbunden ist, wird jede Stunde ein neues Backup erstellt. Was aber, wenn bereits einen guten Router und ein lokaler Server vorhanden ist und darauf die Backups erstellt werden sollen?
+  Mir gefällt die Idee von Apples TimeMachine-Backups sehr gut. Man schließt ein externes Speichermedium an oder verwenden einen Teil des internen Speichers. Ein bequemerer Weg...
 tags: timemachine, apple, backup, tutorial, ubuntu, macos
 ---
 

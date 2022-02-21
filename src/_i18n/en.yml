@@ -1,7 +1,8 @@
 titles:
   home: Homepage
   about-me: About me
-  blog: Blog
+  blog: Blog posts
+  menu_blog: Blog
   projects: Projects
   playlists: Playlists
   error: 404 - Page not found
@@ -14,6 +15,7 @@ description:
   timemachine: Tutorial for creating a TimeMachine network volume on Ubuntu server
   hello-world: My website sees the light of day in a new guise. With a focus towards a portfolio, away from a pure blog.
   duties: Short blog post about extracting the current user in the programming language Rust
+  about-seo: An insight into the SEO measures I have taken on my website to avoid landing only on page four of the search results.
 
 imprint: "German law demands the following information."
 
@@ -24,5 +26,6 @@ published_at: Published at
 images:
   old_main: Old main page
   old_about_me: Old about me with very little content
+  pagespeed: Googles Pagespeed for mobile and desktop with a score of 100 and 99 points
 
 continue: continue&nbsp;reading

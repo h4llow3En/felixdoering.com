@@ -3,7 +3,7 @@ layout: post
 title:  "Alles neu"
 date:   2016-04-14 10:54:40+01:00
 teaser: |
-  Ich wollte ein seriöseres Design haben. Das Alte war nur das Standard-Jekyll-Theme mit einigen kleinen Änderungen. Es sah einfach unfertig aus. Die Farben passten nicht zusammen und alles in allem gab es keinen persönlichen Stil. Und warum auf Englisch? Ich schreibe meine Anwendungen (fast immer) auf Englisch, und ich denke, es sieht viel sauberer aus, wenn ich alles in der gleichen Sprache mache. Vielleicht werde ich meine alten Beiträge übersetzen, aber ich bin mir noch nicht sicher. Ich habe angefangen und versucht, die ersten zu übersetzen, aber dann dachte ich, dass es kein Problem sein könnte, die Anfänge meines Blogs zu sehen. Und nun auf zum zweiten Versuch.
+  Ich wollte ein seriöseres Design haben. Das Alte war nur das Standard-Jekyll-Theme mit einigen kleinen Änderungen. Es sah einfach unfertig aus...
 tags: rebrush, telegram bot, tdo, todo list 
 ---
 ## Alles sieht so neu aus

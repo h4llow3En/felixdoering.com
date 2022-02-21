@@ -10,6 +10,7 @@
 .page {
   @media #{$breakpoint} {
     display: inline-block;
+    width: 100%;
   }
 }
 

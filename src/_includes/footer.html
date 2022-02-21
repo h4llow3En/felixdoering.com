@@ -3,6 +3,7 @@
     © 2022 by Felix Döring, Made with ♥ in Dresden
   </div>
   <div class="center">
+    {% if !page.hide_social_footer %}
     {% if site.email %}<a href="mailto:{{ site.email.address | encode_email }}" title="{% t link_extern %} Mail"><i
         class="fas fa-envelope"></i> Mail</a>
     (<a href="{{ site.email.gpg.path  | prepend: site.baseurl_root }}" title="GPG-Key"><i class="fas fa-key"></i></a>){%
@@ -20,6 +21,7 @@
       title="{% t link_extern %} LinkedIn" rel="noopener"><i class="fab fa-linkedin"></i>
       LinkedIn</a>{% endif
     %}
+    {% endif %}
   </div>
   <div class="legal">
     {% for footerpage in site.pages %}
