@@ -4,7 +4,8 @@ title:  "Everything new"
 date:   2016-04-14 10:54:40+01:00
 teaser: |
   I wanted to have a more serious design the old one was just the standard Jekyll theme with some minor changes. It just was unready...
-tags: rebrush, telegram bot, tdo, todo list 
+tags: rebrush, telegram bot, tdo, todo list
+description: description.everything_new
 ---
 ## Everything has a new look
 
@@ -28,7 +29,7 @@ Why not let people like this just more than once? I updated the feature and from
 
 ## tdo - the TODO list for the terminal
 
-There is another, a much bigger project, Felix and I worked on. It is called ‘tdo’. Felix wanted a simple tool for the command line to manage TODO’s and we started coding. At this point we have many features implemented and published a release on [pypi](https://pypi.python.org/pypi/tdo). It was finished. Yes, it **was**…
+There is another, a much bigger project, Felix and I worked on. It is called ‘tdo’. Felix wanted a simple tool for the command line to manage TODO’s and we started coding. At this point we have many features implemented and published a release on pypi. It was finished. Yes, it **was**…
 
 While working as a tutor on my university I showed this tool to one of my co-tutors and he asked if he will get a notification if a TODO is open for a long time. This gave Felix and me the idea to make it even better. Because of this we made plans for a new project: _tdo-server_
 

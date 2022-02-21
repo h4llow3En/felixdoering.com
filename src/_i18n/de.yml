@@ -12,6 +12,10 @@ titles:
 description:
   page: Felix Döring - Ich bin Felix, ein Full Stack Developer aus Dresden
   blog: Eine Sammlung all meiner Blog-Artikel
+  error: Page not found - Seite nicht gefunden
+  imprint: Impressum von felixdoering.com
+  privacy: Datenschutzerklärung
+  everything_new: Ein Relaunch mit einem anspruchsvolleren Design
   timemachine: Tutorial zum Erstellen eines TimeMachine Netzwerk Volumes auf einem Ubuntu Server.
   hello-world: Mein Website erblickt im neune Gewand das Licht der Welt. Mit einem Fokus in Richtung Portfolio, weg vom reinem Blog.
   duties: Kurzer Blog-Post über das Extrahieren des aktuellen Benutzers in der Programmiersprache Rust

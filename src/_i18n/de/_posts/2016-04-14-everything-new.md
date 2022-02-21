@@ -5,7 +5,9 @@ date:   2016-04-14 10:54:40+01:00
 teaser: |
   Ich wollte ein seriöseres Design haben. Das Alte war nur das Standard-Jekyll-Theme mit einigen kleinen Änderungen. Es sah einfach unfertig aus...
 tags: rebrush, telegram bot, tdo, todo list 
+description: description.everything_new
 ---
+
 ## Alles sieht so neu aus
 
 Zumindest fast. Ich bin immer noch derselbe, aber meine Seite hat ein neues Design bekommen und ich habe beschlossen, meine Beiträge auf Englisch zu verfassen.  
@@ -28,7 +30,7 @@ Warum kann einem etwas nicht mehr als einmal gefallen? Ich habe die Funktion erw
 
 ## tdo - Die TODO-Liste für das Terminal
 
-Es gibt ein weiteres, etwas größeres Projekt, an dem Felix und ich gearbeitet haben. Es heißt 'tdo'. Felix wollte ein einfaches Werkzeug für die Kommandozeile, um TODOs zu verwalten und wir haben beschlossen es selbst zu schreiben. Aktuell haben wir viele Funktionalitäten implementiert und ein Release auf [pypi] (https://pypi.python.org/pypi/tdo) veröffentlicht. Das Tool war fertig. Ja, es **war**...
+Es gibt ein weiteres, etwas größeres Projekt, an dem Felix und ich gearbeitet haben. Es heißt 'tdo'. Felix wollte ein einfaches Werkzeug für die Kommandozeile, um TODOs zu verwalten und wir haben beschlossen es selbst zu schreiben. Aktuell haben wir viele Funktionalitäten implementiert und ein Release auf pypi veröffentlicht. Das Tool war fertig. Ja, es **war**...
 
 Während meiner Tätigkeit als Tutor an meiner Universität, zeigte ich dieses Tool einem Co-Tutoren und er fragte, ob er eine Benachrichtigung erhalten würde, wenn ein TODO schon lange offen ist. Das brachte Felix und mich auf die Idee, es weiter zu verbessen. Wir Pläne für ein neues Projekt gemacht: _tdo-server_
 

@@ -12,6 +12,10 @@ titles:
 description:
   page: Felix Döring - I am Felix a Full Stack Developer from Dresden, Germany
   blog: Collections of all my blog articles
+  error: Page not found - Seite nicht gefunden
+  imprint: Imprint of felixdoering.com
+  privacy: Privacy Policy
+  everything_new: A relaunch with a more suffisticated design
   timemachine: Tutorial for creating a TimeMachine network volume on Ubuntu server
   hello-world: My website sees the light of day in a new guise. With a focus towards a portfolio, away from a pure blog.
   duties: Short blog post about extracting the current user in the programming language Rust

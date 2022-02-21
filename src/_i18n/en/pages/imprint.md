@@ -1,4 +1,4 @@
-# Imprint
+# Imprint/Legal
 
 *This webpage is operated by:*  
 {{ site.data.imprint.name }}  
