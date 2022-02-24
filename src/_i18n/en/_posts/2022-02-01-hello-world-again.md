@@ -10,6 +10,7 @@ images:
     alt: Screenshot old about me page
     description: images.old_about_me
 description: description.hello-world
+show_social: true
 teaser: |
   Why do people create their own websites? Either to promote themselves or to tell their stories in blog form. But...
 tags: relaunch, tracktor, playlist, api

@@ -3,6 +3,7 @@ layout: post
 title:  Bring me a time machine
 description: description.timemachine
 date:   2018-01-22 17:45:00+01:00
+show_social: true
 teaser: |
   I really like the idea of Apples TimeMachine backups. Plug in an external storage or even use some of your internal storage. The more convenient...
 tags: timemachine, apple, backup, tutorial, ubuntu, macos

@@ -11,6 +11,9 @@ social:
   github: https://github.com/h4llow3En
   telegram: https://t.me/h4llow3En
   linkedin: https://de.linkedin.com/in/felix-döring-7455a6204
+  amusic: https://music.apple.com/profile/h4llow3En
+  facebook: https://www.facebook.com/h4ll0w3En
+  instagram: https://www.instagram.com/h4llow3en_de
 
 languages: ["en", "de"]
 exclude_from_localizations:
@@ -23,6 +26,7 @@ exclude_from_localizations:
   - "browserconfig.xml"
   - "favicon-16x16.png"
   - "favicon-32x32.png"
+  - "humans.txt"
   - "mstile-150x150.png"
   - "safari-pinned-tab.svg"
   - "site.webmanifest"

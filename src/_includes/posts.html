@@ -3,11 +3,11 @@
   <a rel="canonical" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">
     <article class="post">
       <span class="post-tilte">{{ post.title }}</span>
-      <span class="post-date">({% if site.lang != "en" %}
-        {{ post.date | date: "%d.%m.%Y"}}
-        {% else %}
-        {{ post.date | date_to_string}}
-        {% endif %})</span><br>
+      <nobr><span class="post-date">({% if site.lang != "en" %}
+          {{ post.date | date: "%d.%m.%Y"}}
+          {% else %}
+          {{ post.date | date_to_string}}
+          {% endif %})</span></nobr><br>
       <span class="post-teaser">{{ post.teaser | truncate: 300, '...' }}</span> &nbsp;&nbsp;>>&nbsp;{% t continue %}
     </article>
   </a>

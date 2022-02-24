@@ -3,32 +3,52 @@
     © 2022 by Felix Döring, Made with ♥ in Dresden
   </div>
   <div class="center">
-    {% if !page.hide_social_footer %}
-    {% if site.email %}<a href="mailto:{{ site.email.address | encode_email }}" title="{% t link_extern %} Mail"><i
-        class="fas fa-envelope"></i> Mail</a>
-    (<a href="{{ site.email.gpg.path  | prepend: site.baseurl_root }}" title="GPG-Key"><i class="fas fa-key"></i></a>){%
+    {% if page.show_social %}
+    {% if site.email %}<a href="mailto:{{ site.email.address | encode_email }}" title="{% t link_extern %} Mail">
+      <nobr><i class="fas fa-envelope"></i> Mail</nobr>
+    </a>
+    (<a href="{{ site.email.gpg.path  | prepend: site.baseurl_root }}" title="GPG-Key">
+      <nobr><i class="fas fa-key"></i></nobr>
+    </a>){%
     endif %}
     {% if site.social.github %}<a href="{{ site.social.github }}" target="_blank" title="{% t link_extern %} Github"
-      rel="noopener"><i class="fab fa-github"></i>
-      Github</a>{% endif %}
+      rel="noopener">
+      <nobr><i class="fab fa-github"></i> Github</nobr>
+    </a>{% endif %}
     {% if site.social.twitter %}<a href="{{ site.social.twitter }}" target="_blank" title="{% t link_extern %} Twitter"
-      rel="noopener"><i class="fab fa-twitter"></i>
-      Twitter</a>{% endif %}
+      rel="noopener">
+      <nobr><i class="fab fa-twitter"></i> Twitter</nobr>
+    </a>{% endif %}
     {% if site.social.telegram %}<a href="{{ site.social.telegram }}" target="_blank"
-      title="{% t link_extern %} Telegram" rel="noopener"><i class="fab fa-telegram-plane"></i> Telegram</a>{%
+      title="{% t link_extern %} Telegram" rel="noopener">
+      <nobr><i class="fab fa-telegram-plane"></i> Telegram</nobr>
+    </a>{%
     endif %}
     {% if site.social.linkedin %}<a href="{{ site.social.linkedin }}" target="_blank"
-      title="{% t link_extern %} LinkedIn" rel="noopener"><i class="fab fa-linkedin"></i>
-      LinkedIn</a>{% endif
+      title="{% t link_extern %} LinkedIn" rel="noopener">
+      <nobr><i class="fab fa-linkedin"></i> LinkedIn</nobr>
+    </a>{% endif
+    %}
+    {% if site.social.amusic %}<a href="{{ site.social.amusic }}" target="_blank" title="{% t link_extern %} AppleMusic"
+      rel="noopener">
+      <nobr><i class="fab fa-apple"></i> AppleMusic</nobr>
+    </a>{% endif
+    %}
+    {% if site.social.facebook %}<a href="{{ site.social.facebook }}" target="_blank"
+      title="{% t link_extern %} Facebook" rel="noopener">
+      <nobr><i class="fab fa-facebook"></i> Facebook</nobr>
+    </a>{% endif
+    %}
+    {% if site.social.instagram %}<a href="{{ site.social.instagram }}" target="_blank"
+      title="{% t link_extern %} instagram" rel="noopener">
+      <nobr><i class="fab fa-instagram"></i> Instagram</nobr>
+    </a></nobr>{% endif
     %}
     {% endif %}
   </div>
   <div class="legal">
-    {% for footerpage in site.pages %}
-    {% if footerpage.title == "titles.imprint" or footerpage.title == "titles.privacy" %}
-    <a href="{{ footerpage.url | prepend: site.baseurl }}" title="{% t footerpage.title %}">{% t footerpage.title %}</a>
-    {% endif %}
-    {% endfor %}
+    <a href="{{ "/imprint" | prepend: site.baseurl_root }}" title="{% t titles.imprint %}">{% t titles.imprint %}</a>
+    <a href="{{ "/privacy" | prepend: site.baseurl_root }}" title="{% t titles.privacy %}">{% t titles.privacy %}</a>
   </div>
   <a href="/sitemap.xml" title="Sitemap"></a>
 </footer>

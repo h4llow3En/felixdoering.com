@@ -41,7 +41,8 @@
           <li class="language">
             {% for language in site.languages %}
             <div>{% capture href%}{{ site.baseurl_root }}{% if forloop.first != true %}/{{ language }}{% endif %}{{
-              page.url}}{%endcapture %}{% if site.lang == language %}{{ language | upcase }}{% else %}<a rel="canonical"
+              page.url}}{%endcapture %}{% if site.lang == language or page.title == "titles.error" or page.title == "titles.imprint" or page.title ==
+              "titles.privacy" %}{{ language | upcase }}{% else %}<a rel="canonical"
                 href="{{ href }}" title="{{ language | upcase }}">{{ language | upcase }}</a>{% endif %}{% if
               forloop.last != true %}&nbsp;|&nbsp;{% endif %}</div>
             {% endfor %}

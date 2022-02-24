@@ -2,6 +2,7 @@
 layout: post
 title:  "Alles neu"
 date:   2016-04-14 10:54:40+01:00
+show_social: true
 teaser: |
   Ich wollte ein seriöseres Design haben. Das Alte war nur das Standard-Jekyll-Theme mit einigen kleinen Änderungen. Es sah einfach unfertig aus...
 tags: rebrush, telegram bot, tdo, todo list 

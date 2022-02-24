@@ -10,6 +10,7 @@ images:
     alt: Screenshot old about me page
     description: images.old_about_me
 description: description.hello-world
+show_social: true
 teaser: |
   Warum erstellen Menschen ihre eigenen Websites? Entweder um sich selbst zu promoten oder um ihre Geschichten in Form eines Blogs zu erzählen. Doch...
 tags: relaunch, tracktor, playlist, api

@@ -8,23 +8,28 @@
       {% if banner.social_links == true %}
       <div class="socials">
         {% if site.email %}<div><a href="mailto:{{ site.email.address | encode_email }}"
-            title="{% t link_extern %} Mail"><i class="fas fa-envelope"></i>
-            Mail</a>
+            title="{% t link_extern %} Mail"><nobr><i class="fas fa-envelope"></i>
+            Mail</nobr></a>
           (<a href="{{ site.email.gpg.path  | prepend: site.baseurl_root }}" title="GPG-Key"><i
-              class="fas fa-key"></i></a>)</div>{%
+              class="fas fa-key"></i></nobr></a>)</div>{%
         endif %}
         {% if site.social.github %}<div><a href="{{ site.social.github }}" target="_blank"
-            title="{% t link_extern %} Github" rel="noopener"><i class="fab fa-github"></i>
-            Github</a></div>{% endif %}
+            title="{% t link_extern %} Github" rel="noopener"><nobr><i class="fab fa-github"></i>
+            Github</nobr></a></div>{% endif %}
         {% if site.social.twitter %}<div><a href="{{ site.social.twitter }}" target="_blank"
-            title="{% t link_extern %} Twitter" rel="noopener"><i class="fab fa-twitter"></i>
-            Twitter</a></div>{% endif %}
+            title="{% t link_extern %} Twitter" rel="noopener"><nobr><i class="fab fa-twitter"></i>
+            Twitter</nobr></a></div>{% endif %}
         {% if site.social.telegram %}<div><a href="{{ site.social.telegram }}" target="_blank"
-            title="{% t link_extern %} Telegram" rel="noopener"><i class="fab fa-telegram-plane"></i> Telegram</a></div>
+            title="{% t link_extern %} Telegram" rel="noopener"><nobr><i class="fab fa-telegram-plane"></i> Telegram</nobr></a></div>
         {% endif %}
         {% if site.social.linkedin %}<div><a href="{{ site.social.linkedin }}" target="_blank"
-            title="{% t link_extern %} LinkedIn" rel="noopener"><i class="fab fa-linkedin"></i>
-            LinkedIn</a></div>{% endif %}
+            title="{% t link_extern %} LinkedIn" rel="noopener"><nobr><i class="fab fa-linkedin"></i>
+            LinkedIn</nobr></a></div>{% endif %}
+            {% if site.social.amusic %}<a href="{{ site.social.amusic }}" target="_blank" title="{% t link_extern %} AppleMusic"
+      rel="noopener">
+      <nobr><i class="fab fa-apple"></i> AppleMusic</nobr>
+    </a>{% endif
+    %}
       </div>
       {% endif %}
     </div>

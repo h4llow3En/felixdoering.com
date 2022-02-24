@@ -4,6 +4,7 @@ menu_title: titles.menu_blog
 layout: page
 permalink: /blog/
 description: description.blog
+show_social: true
 ---
 
 {% tf pages/blog.md %}
