@@ -1,8 +1,3 @@
-stages:
-  - push
-  - build
-  - deploy
-
 Build felixdoering.com:
   image:
     name: gcr.io/kaniko-project/executor:debug
@@ -13,20 +8,6 @@ Build felixdoering.com:
     - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
   script:
     - /kaniko/executor --context $CI_PROJECT_DIR --dockerfile $CI_PROJECT_DIR/Dockerfile --destination $CI_REGISTRY_IMAGE:latest  --cache=true
-
-Sync to GitHub:
-  image: registry.sweetwater.cloud/infrastructure/docker-deploy-helper/rsync-ssh
-  stage: push
-  before_script:
-    - echo "$SSH_GITHUB" | tr -d '\r' | ssh-add -
-    - git config --global user.name "${GITLAB_USER_NAME}"
-    - git config --global user.email "${GITLAB_USER_EMAIL}"
-  script:
-    - git remote add github $REMOTE_REPOSITORY_URL || true
-    - git push github --all --force
-  rules:
-    - if: '$CI_COMMIT_BRANCH'
-
 
 Deploy felixdoering.com:
   image: registry.sweetwater.cloud/infrastructure/docker-deploy-helper/docker-compose
