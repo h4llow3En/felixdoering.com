@@ -6,4 +6,4 @@ languages: ["en"]
 
 User-agent: *
 Allow: /
-Sitemap: /sitemap.xml
+Sitemap: {{site.url}}/sitemap_index.xml

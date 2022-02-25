@@ -4,13 +4,6 @@ COPY src /build
 WORKDIR /build
 
 RUN env JEKYLL_ENV=production jekyll build
-WORKDIR /build/_site
-
-COPY script/sitemap.sh ./sitemap.sh
-#hadolint ignore=SC2086
-RUN chmod +x sitemap.sh && \
-    bash sitemap.sh && \
-    rm sitemap.sh
 
 FROM nginx:1.21-alpine
 
