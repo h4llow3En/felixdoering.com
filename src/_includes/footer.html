@@ -47,8 +47,7 @@
     {% endif %}
   </div>
   <div class="legal">
-    <a href="{{ "/imprint" | prepend: site.baseurl_root }}" title="{% t titles.imprint %}">{% t titles.imprint %}</a>
-    <a href="{{ "/privacy" | prepend: site.baseurl_root }}" title="{% t titles.privacy %}">{% t titles.privacy %}</a>
+    {% include navigation/legal.html %}
   </div>
   <a href="/sitemap.xml" title="Sitemap"></a>
 </footer>

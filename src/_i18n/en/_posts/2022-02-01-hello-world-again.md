@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello new old world
-date:   2022-02-01 12:00:00+01:00
+date:   2022-02-01 12:00:00
 images:
   - file: posts/hello_world/old_main.png
     alt: Screenshot old main page

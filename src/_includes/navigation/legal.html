@@ -1,0 +1,9 @@
+{% for navpage in site.data.navigation.legal %}
+  {% assign t_title = navpage.title | | split: "titles." %}
+  {% assign navpage_url = navpage.url | relative_url %}
+  {% capture link_title %}
+    {% if t_title[0] == "" %}{% t navpage.title %}{% else %}{{ navpage.title }}{% endif %}
+  {% endcapture %}
+  <a rel="canonical" href="{{ navpage_url | prepend: site.baseurl }}" title="{{ link_title }}">{{ link_title }}</a>
+  {% if forloop.last != true %}&nbsp;|&nbsp;{% endif %}
+{% endfor %}

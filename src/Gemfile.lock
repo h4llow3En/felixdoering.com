@@ -61,6 +61,8 @@ GEM
       safe_yaml (~> 1.0)
       terminal-table (~> 2.0)
     jekyll-email-protect (1.1.0)
+    jekyll-include-cache (0.2.1)
+      jekyll (>= 3.7, < 5.0)
     jekyll-multiple-languages-plugin (1.8.0)
       jekyll (>= 2.0, < 5.0)
     jekyll-sanity (1.6.0)
@@ -132,6 +134,7 @@ DEPENDENCIES
   jekyll (~> 4.2.1)
   jekyll-assets!
   jekyll-email-protect
+  jekyll-include-cache
   jekyll-multiple-languages-plugin
   ruby-vips
   sass

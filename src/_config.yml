@@ -15,22 +15,24 @@ social:
   facebook: https://www.facebook.com/h4ll0w3En
   instagram: https://www.instagram.com/h4llow3en_de
 
-languages: ["en", "de"]
+timezone: Europe/Berlin
+
+languages:
+  - en
+  - de
+
 exclude_from_localizations:
-  - "assets"
-  - "favicon.ico"
-  - "robots.txt"
-  - "android-chrome-192x192.png"
-  - "android-chrome-512x512.png"
-  - "apple-touch-icon.png"
-  - "browserconfig.xml"
-  - "favicon-16x16.png"
-  - "favicon-32x32.png"
-  - "humans.txt"
-  - "mstile-150x150.png"
-  - "safari-pinned-tab.svg"
-  - "site.webmanifest"
-  - ".well-known"
+  - assets
+  - favicon.ico
+  - android-chrome-192x192.png
+  - android-chrome-512x512.png
+  - apple-touch-icon.png
+  - favicon-16x16.png
+  - favicon-32x32.png
+  - mstile-150x150.png
+  - safari-pinned-tab.svg
+  - site.webmanifest
+  - .well-known
 
 markdown:    kramdown
 highlighter: rouge
@@ -47,6 +49,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:title/
+  pages:
+    output: true
+    permalink: /:title/
 
 assets:
   source_maps: false
@@ -55,10 +60,16 @@ assets:
   digest: true
   gzip: true
 
+  caching:
+    enabled: true
+    path: ".jekyll-cache/assets"
+    type: file
+
   compress:
     css: true
     js: uglifier
   plugins:
+    css: { autoprefixer: {}}
     autoprefixer:
       browsers:
         - "last 2 versions"
@@ -66,6 +77,6 @@ assets:
       vips: {}
 
 plugins:
-  - jekyll-multiple-languages-plugin
   - jekyll-assets
+  - jekyll-multiple-languages-plugin
   - jekyll-email-protect

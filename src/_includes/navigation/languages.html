@@ -1,12 +1,17 @@
-{%- comment -%}{% if site.languages %}
-<li class="language">
+{% if site.languages %}
+{% assign lang_disabled = page.languages and page.languages.size == 1 %}
+<li class="language{% if lang_disabled%} disabled{% endif %}">
   {% for language in site.languages %}
-  <div>{% capture href%}{{ site.baseurl_root }}{% if forloop.first != true %}/{{ language }}{% endif %}{{
-    page.url}}{%endcapture %}{% if site.lang == language or page.title == "titles.error" or page.title ==
-    "titles.imprint" or page.title ==
-    "titles.privacy" %}{{ language | upcase }}{% else %}<a rel="canonical" href="{{ href }}"
-      title="{{ language | upcase }}">{{ language | upcase }}</a>{% endif %}{% if
-    forloop.last != true %}&nbsp;|&nbsp;{% endif %}</div>
+  <div>
+    {% if site.lang == language or lang_disabled %}
+      {{ language | upcase }}
+    {% else %}
+      {% capture href%}
+        {{ site.baseurl_root }}{% if forloop.first != true %}/{{ language }}{% endif%}{{page.url}}
+      {%endcapture %}
+    <a rel="canonical" href="{{ href }}" title="{{ language | upcase }}">{{ language | upcase }}</a>{% endif %}
+  </div>
+  {% if forloop.last != true %}&nbsp;|&nbsp;{% endif %}
   {% endfor %}
 </li>
-{% endif %}{%- endcomment -%}
+{% endif %}

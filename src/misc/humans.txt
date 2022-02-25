@@ -1,6 +1,7 @@
 ---
 layout: none
 permalink: /humans.txt
+languages: ["en"]
 ---
 
 /* TEAM */

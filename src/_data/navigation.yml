@@ -1,4 +1,3 @@
----
 main:
   - title: "titles.home"
     url: "/"
@@ -9,10 +8,10 @@ main:
   # - title: "titles.playlists"
   #   url: "/playlists"
   - title: "titles.menu_blog"
-    url: "/blog"
+    url: "/blog/"
 
 legal:
   - title: "titles.imprint"
-    url: "/imprint"
+    url: "/imprint/"
   - title: "titles.privacy"
-    url: "privacy"
+    url: "/privacy/"

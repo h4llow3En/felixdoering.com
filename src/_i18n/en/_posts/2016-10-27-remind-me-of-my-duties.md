@@ -2,7 +2,7 @@
 layout: post
 title:  Remind me of my duties
 description: description.duties
-date:   2016-10-27 11:07:00+01:00
+date:   2016-10-27 11:07:00
 show_social: true
 teaser: |
   It felt like a long time ago when Felix and I built the terminal todo list tdo. But now there was time to build something new...

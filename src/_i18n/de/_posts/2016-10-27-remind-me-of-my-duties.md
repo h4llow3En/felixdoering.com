@@ -2,7 +2,7 @@
 layout: post
 title:  Erinnere mich an meine Pflichten
 description: description.duties
-date:   2016-10-27 11:07:00+01:00
+date:   2016-10-27 11:07:00
 show_social: true
 teaser: |
   Es ist gefühlt bereits eine Ewigkeit her, dass Felix und ich gemeinsam unsere Todo-Liste für das Terminal gebaut haben (tdo). Nun ist es an der Zeit, etwas Neues anzugehen...

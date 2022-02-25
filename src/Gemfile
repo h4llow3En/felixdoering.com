@@ -6,12 +6,12 @@ group :jekyll_plugins do
   gem 'jekyll-multiple-languages-plugin'
   gem "jekyll-assets", git: "https://github.com/envygeeks/jekyll-assets"
   gem 'jekyll-email-protect'
-  # gem "jekyll-sitemap", git: "https://github.com/jekyll/jekyll-sitemap"
   gem "font-awesome-sass"
   gem "autoprefixer-rails"
   gem "uglifier"
   gem "sass"
   gem "ruby-vips"
+  gem "jekyll-include-cache"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

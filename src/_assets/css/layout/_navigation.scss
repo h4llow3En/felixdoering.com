@@ -85,6 +85,10 @@
   }
 }
 
+.disabled {
+  color: $secondary-color;
+}
+
 nav {
   float: right;
   width: 100%;
