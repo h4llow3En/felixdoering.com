@@ -23,7 +23,7 @@ Sync to GitHub:
     - git config --global user.email "${GITLAB_USER_EMAIL}"
   script:
     - git remote add github $REMOTE_REPOSITORY_URL || true
-    - git push --force --all github
+    - git push github --all --force
   rules:
     - if: '$CI_COMMIT_BRANCH'
 
