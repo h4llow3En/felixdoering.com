@@ -1,0 +1,4 @@
+Contact: mailto:development@felixdoering.com
+Expires: 2025-03-1T09:00:00.000Z
+Preferred-Languages: de
+Canonical: https://felixdoering.com/.well-known/security.txt

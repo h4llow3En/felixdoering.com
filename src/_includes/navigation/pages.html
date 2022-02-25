@@ -1,0 +1,75 @@
+{% assign current_url = page.url | relative_url | remove: 'index.html' %}
+{% for navpage in site.data.navigation.main %}
+{% assign t_title = navpage.title | | split: "titles." %}
+{% assign navpage_url = navpage.url | relative_url %}
+{% capture link_title %}{% if t_title[0] == "" %}{% t navpage.title %}{% else %}{{ navpage.title }}{% endif %}{%
+endcapture %}
+
+<li {% if current_url==navpage_url %}class="active" {% endif %}>
+  <a rel="canonical" href="{{ navpage_url | prepend: site.baseurl }}" title="{{ link_title }}">{{ link_title }}</a>
+</li>
+
+{% endfor %}
+
+
+
+
+{%- comment -%} {% for navpage in site.pages %}
+{% if navpage.title != "titles.error" and navpage.title != "titles.imprint" and navpage.title !=
+"titles.privacy" %}
+<li {% if page.title==navpage.title %}class="active" {% endif %}>
+  <a rel="canonical" href="{{ navpage.url | prepend: site.baseurl }}" title="{% t navpage.title %}">{% if
+    navpage.menu_title %}
+    {% t navpage.menu_title %} {% else %}
+    {% t navpage.title %}
+    {% endif %}</a>
+</li>
+{% if navpage.anchors %}
+{% for anchor in navpage.anchors %}
+<li class="anchorlink">
+  <a rel="canonical" href="{{ navpage.url | prepend: site.baseurl }}#{{ anchor }}" title="{% t titles.{{anchor}} %}">{%
+    t titles.{{anchor}} %}</a>
+</li>
+{% endfor %}
+{% endif %}
+{% endif %}
+{% endfor %}
+
+
+
+{% assign current_url = page.url | relative_url | remove: 'index.html' %}
+{% assign splitted_url = page.url | remove: 'index.html' | split: '/' %}
+{% assign translatable_title = 'titles.' %}
+{% for node in site.data.nav.main %}
+{% assign t_title = node.title | | split:translatable_title %}
+{% if t_title[0] == blank %}
+{% assign translatable = true %}
+{% else %}
+{% assign translatable = false %}
+{% endif %}
+{% assign node_url = node.url | relative_url %}
+{% assign paged_front = splitted_url[1] | plus: 0 %}
+{% if current_url == node_url and current_url == frontpage %}
+<li class="is-active menu-text">
+  <a href="{{ node_url }}">{{ site.title }}</a>
+</li>
+{% elsif current_url contains node_url and paged_front != 0 %}
+<li class="is-active menu-text">
+  <a href="{{ node_url }}">{{ site.title }}</a>
+</li>
+{% elsif current_url contains node_url and current_url != frontpage and node_url != frontpage %}
+<li class="is-active">
+  <a href="{{ node_url }}">{% if translatable %}{% t node.title %}{% else %}{{ node.title }}{% endif %}</a>
+</li>
+{% else %}
+{% if node_url == frontpage %}
+<li class="menu-text">
+  <a href="{{ node_url }}">{{ site.title }}</a>
+</li>
+{% else %}
+<li>
+  <a href="{{ node_url }}">{% if translatable %}{% t node.title %}{% else %}{{ node.title }}{% endif %}</a>
+</li>
+{% endif %}
+{% endif %}
+{% endfor %}{%- endcomment -%}

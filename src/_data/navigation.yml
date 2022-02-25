@@ -1,0 +1,18 @@
+---
+main:
+  - title: "titles.home"
+    url: "/"
+  - title: "titles.about-me"
+    url: "/#about-me"
+  # - title: "titles.projects"
+  #   url: "/projects"
+  # - title: "titles.playlists"
+  #   url: "/playlists"
+  - title: "titles.menu_blog"
+    url: "/blog"
+
+legal:
+  - title: "titles.imprint"
+    url: "/imprint"
+  - title: "titles.privacy"
+    url: "privacy"

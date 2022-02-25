@@ -1,7 +1,12 @@
+---
+layout: none
+permalink: /humans.txt
+---
+
 /* TEAM */
   Author, Developer, Designer: Felix Döring
   Twitter: @Felix_Doering
-	Contact: mail [at] felixdoering.com
+  Contact: mail [at] felixdoering.com
   Location: Dresden, Germany
 
 /* SITE */

@@ -1,7 +1,3 @@
-{% assign front = false %}
-{% if page.url == "/" or page.url == "/de" %}
-{% assign front = true %}
-{% endif %}
 <header class="navigation {% if page.layout == "bannerpage" %}transparent{% endif %}">
   <div class="menu">
 
@@ -17,37 +13,8 @@
     <div class="nav-items">
       <nav>
         <ul>
-          {% for navpage in site.pages %}
-          {% if navpage.title != "titles.error" and navpage.title != "titles.imprint" and navpage.title !=
-          "titles.privacy" %}
-          <li {% if page.title==navpage.title %}class="active" {% endif %}>
-            <a rel="canonical" href="{{ navpage.url | prepend: site.baseurl }}" title="{% t navpage.title %}">{% if
-              navpage.menu_title %}
-              {% t navpage.menu_title %} {% else %}
-              {% t navpage.title %}
-              {% endif %}</a>
-          </li>
-          {% if navpage.anchors %}
-          {% for anchor in navpage.anchors %}
-          <li class="anchorlink">
-            <a rel="canonical" href="{{ navpage.url | prepend: site.baseurl }}#{{ anchor }}"
-              title="{% t titles.{{anchor}} %}">{% t titles.{{anchor}} %}</a>
-          </li>
-          {% endfor %}
-          {% endif %}
-          {% endif %}
-          {% endfor %}
-          {% if site.languages %}
-          <li class="language">
-            {% for language in site.languages %}
-            <div>{% capture href%}{{ site.baseurl_root }}{% if forloop.first != true %}/{{ language }}{% endif %}{{
-              page.url}}{%endcapture %}{% if site.lang == language or page.title == "titles.error" or page.title == "titles.imprint" or page.title ==
-              "titles.privacy" %}{{ language | upcase }}{% else %}<a rel="canonical"
-                href="{{ href }}" title="{{ language | upcase }}">{{ language | upcase }}</a>{% endif %}{% if
-              forloop.last != true %}&nbsp;|&nbsp;{% endif %}</div>
-            {% endfor %}
-          </li>
-          {% endif %}
+          {% include navigation/pages.html %}
+          {% comment %}{% include navigation/languages.html %}{%- endcomment -%}
         </ul>
       </nav>
     </div>
