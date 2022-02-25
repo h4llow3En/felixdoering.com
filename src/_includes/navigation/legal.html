@@ -4,6 +4,6 @@
   {% capture link_title %}
     {% if t_title[0] == "" %}{% t navpage.title %}{% else %}{{ navpage.title }}{% endif %}
   {% endcapture %}
-  <a rel="canonical" href="{{ navpage_url | prepend: site.baseurl }}" title="{{ link_title }}">{{ link_title }}</a>
+  <a rel="canonical" href="{{ navpage_url }}" title="{{ link_title }}">{{ link_title }}</a>
   {% if forloop.last != true %}&nbsp;|&nbsp;{% endif %}
 {% endfor %}
