@@ -9,6 +9,20 @@ Build felixdoering.com:
   script:
     - /kaniko/executor --context $CI_PROJECT_DIR --dockerfile $CI_PROJECT_DIR/Dockerfile --destination $CI_REGISTRY_IMAGE:latest  --cache=true
 
+Sync to GitHub:
+  image: registry.sweetwater.cloud/infrastructure/docker-deploy-helper/rsync-ssh
+  stage: deploy
+  before_script:
+    - echo "$SSH_DEPLOY_KEY" | tr -d '\r' | ssh-add -
+    - git config --global user.name "${GITLAB_USER_NAME}"
+    - git config --global user.email "${GITLAB_USER_EMAIL}"
+  script:
+    - git remote add github $REMOTE_REPOSITORY_URL
+    - git push --force github $CI_COMMIT_BRANCH
+  rules:
+    - if: '$CI_COMMIT_BRANCH'
+
+
 Deploy felixdoering.com:
   image: registry.sweetwater.cloud/infrastructure/docker-deploy-helper/docker-compose
   stage: deploy
@@ -18,5 +32,5 @@ Deploy felixdoering.com:
     - remote-connect $TARGET_USER@$TARGET_HOST
     - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
     - docker-compose -f docker-compose.yml pull && docker-compose -f docker-compose.yml up -d
-  only:
-    - main
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
