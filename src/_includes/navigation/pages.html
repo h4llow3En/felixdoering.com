@@ -8,6 +8,6 @@
   {% endcapture %}
 
   <li {% if current_url==navpage_url %}class="active" {% endif %}{% if anchor.size> 1 %}class="anchorlink" {% endif %}>
-    <a rel="canonical" href="{{ navpage_url | relative_url }}" title="{{ link_title }}">{{ link_title }}</a>
+    <a rel="canonical" href="{{ navpage_url | prepend: site.baseurl }}" title="{{ link_title }}">{{ link_title }}</a>
   </li>
 {% endfor %}
