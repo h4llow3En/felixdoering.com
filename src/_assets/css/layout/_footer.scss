@@ -37,4 +37,8 @@ footer {
     text-decoration: none;
     color: $secondary-color;
   }
+
+  @media print {
+    display: none;
+  }
 }

@@ -30,5 +30,6 @@ images:
   old_main: Die alte Hauptseite
   old_about_me: Die alte "Über mich"-Seite mit nur sehr wenig Inhalt
   pagespeed: Googles Pagespeed Bewertung für die mobile und die Desktop-Ansicht mit einem Score von 100 bzw. 99 Punkten
+  searchpreview: Titel und Beschreibung in den Suchergebnissen von DuckDuckGo
 
 continue: Weiterlesen

@@ -1,13 +1,13 @@
-{% assign current_url = page.url | relative_url | remove: 'index.html' %}
+{% assign current_url = page.url | prepend: site.baseurl | remove: 'index.html' %}
 {% for navpage in site.data.navigation.main %}
   {% assign t_title = navpage.title | split: "titles." %}
   {% assign anchor = navpage.url | split: "#" %}
-  {% assign navpage_url = navpage.url | relative_url %}
+  {% assign navpage_url = navpage.url | prepend: site.baseurl %}
   {% capture link_title %}
     {% if t_title[0] == "" %}{% t navpage.title %}{% else %}{{ navpage.title }}{% endif %}
   {% endcapture %}
 
   <li {% if current_url==navpage_url %}class="active" {% endif %}{% if anchor.size> 1 %}class="anchorlink" {% endif %}>
-    <a rel="canonical" href="{{ navpage_url | prepend: site.baseurl }}" title="{{ link_title }}">{{ link_title }}</a>
+    <a rel="canonical" href="{{ navpage_url }}" title="{{ link_title }}">{{ link_title }}</a>
   </li>
 {% endfor %}

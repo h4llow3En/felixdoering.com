@@ -34,9 +34,9 @@
   overflow: hidden;
   z-index: 999;
 
-  transition: all .5s ease-in-out;
-  -webkit-transition: all .5s ease-in;
-  -moz-transition: all .5s ease-in;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
 
   @media screen and (prefers-color-scheme: light) {
     background-color: $bg-color-lightmode;
@@ -44,21 +44,24 @@
 }
 
 .transparent {
-  background-color: rgba($color: $bg-color-darkmode, $alpha: .5);
-  transition: all .25s ease-in-out;
-  -webkit-transition: all .25s ease-in;
-  -moz-transition: all .25s ease-in;
+  background-color: rgba($color: $bg-color-darkmode, $alpha: 0.5);
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in;
+  -moz-transition: all 0.25s ease-in;
 
   @media screen and (prefers-color-scheme: light) {
-    background-color: rgba($color: $bg-color-lightmode, $alpha: .5);
+    background-color: rgba($color: $bg-color-lightmode, $alpha: 0.5);
   }
-
 }
 
 .menu {
   padding: 0 2%;
   margin: 0 auto;
   position: relative;
+
+  @media print {
+    display: none;
+  }
 }
 
 .nav-items {
@@ -174,9 +177,9 @@ nav {
 
 .hidden {
   visibility: hidden;
-  transition: all .25s ease-in-out;
-  -webkit-transition: all .25s ease-in-out;
-  -moz-transition: all .25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
 }
 
 .mobile-toggle {
