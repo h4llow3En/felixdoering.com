@@ -6,8 +6,10 @@ titles:
   projects: Projekte
   playlists: Playlisten
   error: 404 - Seite nicht gefunden
-  privacy: Datenschutzerklärung
-  imprint: Impressum
+  privacy: Privacy Policy/Datenschutzerklärung
+  menu_privacy: Datenschutzerklärung
+  imprint: Imprint/Impressum
+  menu_imprint: Impressum
 
 description:
   page: Felix Döring - Ich bin Felix, ein Full Stack Developer aus Dresden

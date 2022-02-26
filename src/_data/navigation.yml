@@ -11,7 +11,7 @@ main:
     url: "/blog/"
 
 legal:
-  - title: "titles.imprint"
+  - title: "titles.menu_imprint"
     url: "/imprint/"
-  - title: "titles.privacy"
+  - title: "titles.menu_privacy"
     url: "/privacy/"

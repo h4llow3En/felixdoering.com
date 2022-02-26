@@ -1,13 +1,15 @@
 titles:
-  home: Homepage
+  home: Home
   about-me: About me
   blog: Blog posts
   menu_blog: Blog
   projects: Projects
   playlists: Playlists
   error: 404 - Page not found
-  privacy: Privacy Policy
-  imprint: Imprint
+  privacy: Privacy Policy/Datenschutzerklärung
+  menu_privacy: Privacy Policy
+  imprint: Imprint/Impressum
+  menu_imprint: Imprint
 
 description:
   page: Felix Döring - I am Felix a Full Stack Developer from Dresden, Germany
