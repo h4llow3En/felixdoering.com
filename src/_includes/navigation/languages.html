@@ -1,14 +1,14 @@
 {% if site.languages %}
 {% assign lang_disabled = page.languages and page.languages.size == 1 %}
-<li class="language{% if lang_disabled%} disabled{% endif %}">
+<li class="language{% if lang_disabled %} disabled{% endif %}">
   {% for language in site.languages %}
   <div>
     {% if site.lang == language or lang_disabled %}
       {{ language | upcase }}
     {% else %}
-      {% capture href%}
-        {{ site.baseurl_root }}{% if forloop.first != true %}/{{ language }}{% endif%}{{ page.url }}
-      {%endcapture %}
+      {% capture href %}
+        {{ site.baseurl_root }}{% if forloop.first != true %}/{{ language }}{% endif %}{{ page.url }}
+      {% endcapture %}
     <a rel="canonical" href="{{ href }}" title="{{ language | upcase }}">{{ language | upcase }}</a>{% endif %}
   </div>
   {% if forloop.last != true %}&nbsp;|&nbsp;{% endif %}
