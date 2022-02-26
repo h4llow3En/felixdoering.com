@@ -11,7 +11,7 @@
   <!-- Open Graph tags -->
   <meta property="og:locale" content="{% if site.lang == "en" %}en_US{% else %}de_DE{% endif %}">
   <meta property="og:title" content="{% if include.title %}{{ include.title }}{% else %}{% t page.title %}{% endif %}">
-  <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url}}">
+  <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}">
   <meta property="og:site_name" content="Felix Döring - felixdoering.com">
   <meta property="og:description"
     content="{% if page.description %}{% t page.description %}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 300 }}{% else %}{% t description.page %}{% endif %}">

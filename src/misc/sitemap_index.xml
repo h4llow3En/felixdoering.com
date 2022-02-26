@@ -7,7 +7,7 @@ languages: ["en"]
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 {%- for lang in site.languages %}
     <sitemap>
-        <loc>{{site.url}}{% if forloop.first != true  %}/{{lang}}{% endif %}/sitemap.xml</loc>
+        <loc>{{ site.url }}{% if forloop.first != true  %}/{{ lang }}{% endif %}/sitemap.xml</loc>
     </sitemap>
 {%- endfor %}
 </sitemapindex>

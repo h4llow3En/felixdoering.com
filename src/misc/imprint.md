@@ -17,7 +17,7 @@ languages: ["en"]
 
 Direkte Kontaktaufnahme via [<i class="fas fa-envelope"></i> E-Mail](mailto:{{ site.email.address | encode_email }}) möglich.  
 [<i class="fas fa-key"></i> GPG-Key]({{ site.email.gpg.path  | prepend: site.baseurl_root }})  
-Fingerprint: {{site.email.gpg.fprint }}
+Fingerprint: {{ site.email.gpg.fprint }}
 
 Weiterführende Information bezüglich des Datenschutzes können Sie aus der {% for p in site.pages %}{% if p.title == "titles.privacy" %}[{% t p.title %}]({{ p.url | prepend: site.baseurl }}){% endif %}{% endfor %} entnehmen.
 
@@ -30,6 +30,6 @@ Weiterführende Information bezüglich des Datenschutzes können Sie aus der {% 
 
 Contact via [<i class="fas fa-envelope"></i> Mail](mailto:{{ site.email.address | encode_email }})  
 [<i class="fas fa-key"></i> GPG-Key]({{ site.email.gpg.path  | prepend: site.baseurl_root }})  
-Fingerprint: {{site.email.gpg.fprint }}
+Fingerprint: {{ site.email.gpg.fprint }}
 
 For more information regarding the privacy, please refert to the {% for p in site.pages %}{% if p.title == "titles.privacy" %}[{% t p.title %}]({{ p.url | prepend: site.baseurl }}){% endif %}{% endfor %}.

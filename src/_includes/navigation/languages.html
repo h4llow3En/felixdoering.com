@@ -7,7 +7,7 @@
       {{ language | upcase }}
     {% else %}
       {% capture href%}
-        {{ site.baseurl_root }}{% if forloop.first != true %}/{{ language }}{% endif%}{{page.url}}
+        {{ site.baseurl_root }}{% if forloop.first != true %}/{{ language }}{% endif%}{{ page.url }}
       {%endcapture %}
     <a rel="canonical" href="{{ href }}" title="{{ language | upcase }}">{{ language | upcase }}</a>{% endif %}
   </div>

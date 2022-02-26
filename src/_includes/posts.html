@@ -4,9 +4,9 @@
     <article class="post">
       <span class="post-tilte">{{ post.title }}</span>
       <nobr><span class="post-date">({% if site.lang != "en" %}
-          {{ post.date | date: "%d.%m.%Y"}}
+          {{ post.date | date: "%d.%m.%Y" }}
           {% else %}
-          {{ post.date | date_to_string}}
+          {{ post.date | date_to_string }}
           {% endif %})</span></nobr><br>
       <span class="post-teaser">{{ post.teaser | truncate: 300, '...' }}</span> &nbsp;&nbsp;>>&nbsp;{% t continue %}
     </article>
