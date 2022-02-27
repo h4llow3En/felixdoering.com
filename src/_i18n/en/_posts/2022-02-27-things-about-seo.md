@@ -19,7 +19,7 @@ teaser: |
 
 SEO, short for "Search Engine Optimisation", is at the same time a great but also a difficult thing.
 
-> \[It\] is the process of improving the quality and quantity of website traffic to a website or a web page from search engines.  
+> \[It\] is the process of improving the quality and quantity of website traffic to a website or a web page from search engines.
 > <cite>-- Source: [Wikipedia](https://en.wikipedia.org/wiki/Search_engine_optimization)</cite>
 
 Above all, SEO refers to unpaid traffic of websites, i.e. appearing as high as possible in search results without (regularly) spending money on it.  

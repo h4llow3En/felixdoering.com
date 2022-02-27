@@ -19,7 +19,7 @@ teaser: |
 
 SEO, kurz für "Search Engine Optimization" (Suchmaschinenoptimierung), ist gleichzeitig eine tolle, aber auch eine schwierige Sache.
 
-> \[Sie\] bezeichnet Maßnahmen, die dazu dienen, die Sichtbarkeit einer Website und ihrer Inhalte für Benutzer einer Websuchmaschine zu erhöhen.  
+> \[Sie\] bezeichnet Maßnahmen, die dazu dienen, die Sichtbarkeit einer Website und ihrer Inhalte für Benutzer einer Websuchmaschine zu erhöhen.
 > <cite>-- Quelle: [Wikipedia](https://de.wikipedia.org/wiki/Suchmaschinenoptimierung)</cite>
 
 Vor allem bezieht sich SEO auf unbezahlten Traffic von Webseiten, also möglichst weit oben in Suchergebnissen zu erscheinen, ohne dafür (regelmäßig) Geld auszugeben.  
