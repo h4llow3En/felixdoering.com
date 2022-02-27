@@ -1,0 +1,10 @@
+---
+layout: none
+permalink: /.well-known/security.txt
+languages: ["en"]
+---
+Contact: mailto:security@felixdoering.com
+Expires: {{ "now" | date: "%Y" | plus: "3" }}-12-31T22:59:00.000Z
+Encryption: {{ site.email.gpg.path  | absolute_url }}
+Preferred-Languages: de, en
+Canonical: {{ page.permalink | absolute_url }}
