@@ -24,7 +24,7 @@ SEO, kurz für "Search Engine Optimization" (Suchmaschinenoptimierung), ist glei
 
 Vor allem bezieht sich SEO auf unbezahlten Traffic von Webseiten, also möglichst weit oben in Suchergebnissen zu erscheinen, ohne dafür (regelmäßig) Geld auszugeben.  
 Neben dem Inhalt, auf welchen ich später noch weiter drauf eingehen werde, ist die generelle Performance der Seite sehr wichtig. Wie und vor allem wann wird das CSS geladen, blockieren Elemente den Seitenaufbau, wie schnell antwortet der Server. All diese Sachen und noch einige mehr gilt es zu beachten, wenn man sein SEO verbessern möchte.  
-Um sich einen Überblick zu verschaffen, wie Google die Seiten performancetechnisch einschätzt, bieten die [PageSpeed Insights](http://pagespeed.web.dev/) eine ganz gute Möglichkeit. Wenn es nur darum gehen würde hätte ich mit einer Bewertung von 99 auf Desktop und 100 auf Mobilgeräten schon ausgesorgt.
+Um sich einen Überblick zu verschaffen, wie Google die Seiten performancetechnisch einschätzt, bieten die [PageSpeed Insights](http://pagespeed.web.dev/) eine ganz gute Möglichkeit. Wenn es nur darum gehen würde, hätte ich mit einer Bewertung von 99 auf Desktop und 100 auf Mobilgeräten schon ausgesorgt.
 
 ## Auf den Inhalt kommt es an
 
