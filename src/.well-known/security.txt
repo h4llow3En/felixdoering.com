@@ -1,0 +1,5 @@
+Contact: mailto:security@felixdoering.com
+Expires: 2024-02-27T23:59:00.000Z
+Encryption: https://felixdoering.com/assets/gpg/Felix-D%C3%B6ring-BDF33B31.asc
+Preferred-Languages: de, en
+Canonical: https://felixdoering.com/.well-known/security.txt

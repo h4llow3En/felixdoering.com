@@ -3,6 +3,7 @@ layout: post
 title:  Man bringe mir eine Zeitmaschine
 description: description.timemachine
 date:   2018-01-22 17:45:00
+last_modified_at: 2022-02-14 16:00:00
 show_social: true
 teaser: |
   Mir gefällt die Idee von Apples TimeMachine-Backups sehr gut. Man schließt ein externes Speichermedium an oder verwenden einen Teil des internen Speichers. Ein bequemerer Weg...

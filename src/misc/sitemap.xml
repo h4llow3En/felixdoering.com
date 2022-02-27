@@ -7,14 +7,16 @@ permalink: /sitemap.xml
 {%- for page in site.pages %}
   <url>
     <loc>{{ site.url }}{{ site.baseurl }}{{ page.url }}</loc>
-    <priority>{% if page.url == "/" %}1.0{% else %}0.8{% endif %}</priority>{% if page.url == "/" %}
-    <changefreq>always</changefreq>{% endif %}
+    <priority>{% if page.url == "/" %}1.0{% else %}0.8{% endif %}</priority>
+    {%- if page.url == "/" %}
+    <changefreq>always</changefreq>
+    {%- endif %}
   </url>
 {%- endfor %}
 {%- for post in site.posts %}
   <url>
     <loc>{{ site.url }}{{ site.baseurl }}{{ post.url | remove: 'index.html' }}</loc>
-    <lastmod>{{ post.date | date: "%Y-%m-%dT%H:%M:%S+01:00" }}</lastmod>
+    <lastmod>{% if post.last_modified_at %}{{ post.last_modified_at | date: "%Y-%m-%dT%H:%M:%S+01:00" }}{% else %}{{ post.date | date: "%Y-%m-%dT%H:%M:%S+01:00" }}{% endif %}</lastmod>
     <priority>0.6</priority>
   </url>
 {%- endfor %}
