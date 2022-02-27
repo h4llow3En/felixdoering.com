@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Die Sache mit der Search Engine Optimization (SEO)
-date:   2022-02-27 18:45:00
+date:   2022-02-27 17:45:00
 images:
   - file: posts/seo/pagespeed.png
     alt: Screenshot Pagespeed Dev-Tools
