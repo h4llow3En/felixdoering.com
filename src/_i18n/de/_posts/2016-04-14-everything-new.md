@@ -24,7 +24,7 @@ Aber ich möchte auch ein wenig über meine aktuellen Projekte schreiben, nicht 
 
 ## Ich rede mit dir
 
-Wem der Messenger Telegram bekannt ost, weiß sicherlich auch in diesem auch Bots verwendet werden können. [Felix](https://dummyco.de) und ich haben den IAmTalkingToYou-Bot geschrieben. Aber was macht er? Sobald eine Person erwähnt wird, registriert der Bot dies und erwähnt sie ebenfalls noch einmal.  
+Wem der Messenger Telegram bekannt ist, weiß sicherlich auch in diesem auch Bots verwendet werden können. [Felix](https://dummyco.de) und ich haben den IAmTalkingToYou-Bot geschrieben. Aber was macht er? Sobald eine Person erwähnt wird, registriert der Bot dies und erwähnt sie ebenfalls noch einmal.  
 Eine neue, gestern implementierte Funktion ist das '+1'-Feature. Schreibt dies jemand, antwortet der Bot darauf mit '\<Benutzername des Absenders\> gefällt das.' oder im Falle von '-1' '\<Benutzername des Absenders\> gefällt das nicht.' Ja, aktuell antwortet dieser Bot auf Deutsch, aber hoffentlich werden wir irgendwann auch eine englische Version anbieten.  
 Beim Testen der neuen Funktion hat Felix ein '+2' geschrieben.  
 Warum kann einem etwas nicht mehr als einmal gefallen? Ich habe die Funktion erweitern und von nun an kann man '+\<x\>' schreiben und bekommt diese Antwort: '\<Benutzername des Absenders\> gefällt das \<x\>-fach.'
