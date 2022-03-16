@@ -25,7 +25,7 @@ A new day, a new task. Or so I thought. As described in my previous entry, I hav
 That's why I've been looking for a way to automate this a little bit. I mean, it wouldn't be difficult, if you have the information from step 6 to just insert it with the help of a little script. The unpleasant thing is that you would have to do all the steps before that manually so that you have all the information for it.
 It's nice that Github exists! Because somehow you always find people who have already built something for it out of the same problem.
 Maybe not directly the same problem now, but it helps in general anyway!
-[__github-release__](https://github.com/aktau/github-release) by aktau is a tool that can create releases for Github via the command line and can also attach binaries. This should make it fairly easy to write everything in a somewhat larger script.
+[__github-release__](https://github.com/aktau/github-release "External Link: github-release repository on Github"){:target="_blank"} by aktau is a tool that can create releases for Github via the command line and can also attach binaries. This should make it fairly easy to write everything in a somewhat larger script.
 
 The signing of the zip file is also only a command, which receives the zip as `$1` and the private key for encryption as `$2`.
 ```

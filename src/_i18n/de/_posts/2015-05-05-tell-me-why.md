@@ -25,7 +25,7 @@ Ein neuer Tag, eine neue Aufgabe. Das dachte ich jedenfalls. Wie in meinem Eintr
 Aus diesem Grund bin ich auf der Suche gewesen, dass ich das vielleicht irgendwie ein wenig automatisieren kann. Ich meine, es wäre nicht schwer, wenn man die Informationen aus 6. hat, diese mithilfe eines kleinen Scripts einfach einzufügen. Das Unangenehme an der Sache ist nur, dass man die Schritte davor alle manuell machen müsste, damit man alle Informationen dafür hat.
 Schön, dass es Github gibt! Denn man findet immer irgendwie Leute, die aus dem gleichen Problem heraus schon etwas dafür gebastelt haben.
 Vielleicht jetzt nicht direkt das gleiche Problem, aber es hilft trotzdem schon allgemein!
-[__github-release__](https://github.com/aktau/github-release) von aktau ist ein Tool, welches via Kommandozeile Releases für Github erstellen kann und auch Binaries mit anfügen kann. Dadurch müsste es ziemlich einfach möglich sein, nun doch alles in ein etwas größeres Script zu schreiben.
+[__github-release__](https://github.com/aktau/github-release "Externer Link: github-release Repository auf Github"){:target="_blank"} von aktau ist ein Tool, welches via Kommandozeile Releases für Github erstellen kann und auch Binaries mit anfügen kann. Dadurch müsste es ziemlich einfach möglich sein, nun doch alles in ein etwas größeres Script zu schreiben.
 
 Das Signieren der Zip-Datei ist auch nur ein Befehl, welcher als `$1` die Zip und als `$2` den Private-Key zum verschlüsseln entgegennimmt.
 ```

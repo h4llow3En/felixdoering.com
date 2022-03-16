@@ -23,7 +23,7 @@ But I want to write a bit about my recent projects, too, not just the redesign o
 
 ## I am talking to you
 
-If you know the messenger Telegram you probably know that you can use bots as well. [Felix](https://dummyco.de) and I have written the IAmTalkingToYou Bot. But what does it do? If anyone mentions a person the bot will recognize this and send a mention to this person as well.  
+If you know the messenger Telegram you probably know that you can use bots as well. [Felix](https://dummyco.de "External Link: Blog of Felix Wittwer"){:target="_blank"} and I have written the IAmTalkingToYou Bot. But what does it do? If anyone mentions a person the bot will recognize this and send a mention to this person as well.  
 A new, yesterday implemented feature is if you write ’+1’ the bot will reply to this as well with ’\<username of sender\> gefällt das.’ or in case of ’-1’ ’\<username of sender\> gefällt das nicht.’ Yes this bot replies in German but hopefully sometime we will offer an English version as well.  
 While testing the new feature Felix has written a ‘+2’.  
 Why not let people like this just more than once? I updated the feature and from now on you can write ‘+\<x\>’ and you will get this reply: ‘\<username of sender\> gefällt das \<x\>-fach.’

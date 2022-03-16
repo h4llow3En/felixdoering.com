@@ -30,6 +30,6 @@ I no longer wished to fall back on frameworks, which, no matter how far they can
 In addition, I decided a while ago that I do not want to know who comes to my site. Neither how nor why. Consequently, I removed all tools that provide me with statistics about this. This also saves me from having to deal with a cookie banner. No tracking, no external fonts hosted by Google and no integration of social media means no need for a banner.
 
 So what will the future bring for this website?
-Since I would very much like to publish this website, both the portfolio of projects and the playlist overview are not yet ready. For the latter, the [Tracktor API](https://github.com/tracktor-one/tracktor){:target="_blank"} must first be completed first and then the frontend part developed.
+Since I would very much like to publish this website, both the portfolio of projects and the playlist overview are not yet ready. For the latter, the [Tracktor API](https://github.com/tracktor-one/tracktor "External Link: tracktor repository on Github"){:target="_blank"} must first be completed first and then the frontend part developed.
 
 So there is still some work to be done until the site is the way I want it to be.

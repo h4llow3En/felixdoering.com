@@ -14,9 +14,12 @@ titles:
 description:
   page: Felix Döring - Ich bin Felix, ein Full Stack Developer aus Dresden
   blog: Eine Sammlung all meiner Blog-Artikel
+  second_first_try: Mein zweiter Versuch einen regelmäßigen Blog zu starten
+  new_logo: Über das neue Logo auf meiner Website
+  automated_is_better: Die Idee, einen Auto-Updater in mein Traffic-Plugin für die AG DSN zu integrieren
   tell_me_why: Der Weg zur Automatisierung zum Erstellen von Releases auf Github
   momendlos_now: Die Bilder meines Fotoblogs sollen meinen Desktop schmücken - Die Idee für ein neues Projekt
-  more_frequently: Kurzer Einblick in mein Aktuelles Wetterstations-Projekt
+  more_frequently: Kurzer Einblick in mein aktuelles Wetterstations-Projekt
   everything_new: Ein Relaunch mit einem anspruchsvolleren Design
   timemachine: Tutorial zum Erstellen eines TimeMachine Netzwerk Volumes auf einem Ubuntu Server.
   hello-world: Mein Website erblickt im neune Gewand das Licht der Welt. Mit einem Fokus in Richtung Portfolio, weg vom reinem Blog.
@@ -30,6 +33,7 @@ link_extern: "Externer Link:"
 published_at: Veröffentlicht am
 
 images:
+  new_logo: Neues Logo basierend auf meinem Nickname h4llow3En
   old_main: Die alte Hauptseite
   old_about_me: Die alte "Über mich"-Seite mit nur sehr wenig Inhalt
   pagespeed: Googles Pagespeed Bewertung für die mobile und die Desktop-Ansicht mit einem Score von 100 bzw. 99 Punkten

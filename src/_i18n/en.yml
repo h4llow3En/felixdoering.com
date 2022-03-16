@@ -17,6 +17,9 @@ description:
   error: Page not found - Seite nicht gefunden
   imprint: Impressum - Imprint felixdoering.com
   privacy: Datenschutzerklärung - Privacy Policy
+  second_first_try: My second attempt to start a regular blog
+  new_logo: About the Logo on my website
+  automated_is_better: The idea of integrating an auto-updater into my traffic plugin for AG DSN
   tell_me_why: The path to automation for creating releases on Github
   momendlos_now: The pictures of my photoblog should decorate my desktop - The idea of a new project
   more_frequently: Brief insight into my current weather station project
@@ -25,6 +28,7 @@ description:
   hello-world: My website sees the light of day in a new guise. With a focus towards a portfolio, away from a pure blog.
   duties: Short blog post about extracting the current user in the programming language Rust
   about-seo: An insight into the SEO measures I have taken on my website to avoid landing only on page four of the search results.
+  never_ending_weather_station: About the weather station project, which has been with me for years and will probably continue to do so.
 
 imprint: "German law demands the following information."
 
@@ -33,6 +37,7 @@ link_extern: "External link:"
 published_at: Published at
 
 images:
+  new_logo: new logo based on my nickname h4llow3En
   old_main: Old main page
   old_about_me: Old about me with very little content
   pagespeed: Googles Pagespeed for mobile and desktop with a score of 100 and 99 points

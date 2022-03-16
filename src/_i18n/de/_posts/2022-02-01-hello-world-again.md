@@ -30,6 +30,6 @@ Ich wollte nicht mehr auf Frameworks zurückgreifen, welche man, egal wie weit s
 Zudem habe ich mich schon seit Längerem dazu entschlossen, dass ich nicht wissen muss, wer wie und warum auf meine Seite kommt. Folglich verzichte ich auf sämtliche Tools, welche mir darüber Statistiken liefern. Das erspart mir ebenfalls die Sache mit dem Cookiebanner. Kein Tracking, keine von Google gehosteten externen Fonts und keine Einbindung von Social Media bedeutet keine Notwendigkeit für ein Banner.
 
 Bleibt noch die Frage, was soll noch kommen?
-Da ich diese Website sehr gerne veröffentlichen möchte, ist sowohl das Portfolio an Projekten als auch die Playlistübersicht noch nicht fertig. Für Letzteres muss zunächst die [Tracktor-API](https://github.com/tracktor-one/tracktor){:target="_blank"} fertiggestellt und anschließend der Frontend-Part entwickelt werden.
+Da ich diese Website sehr gerne veröffentlichen möchte, ist sowohl das Portfolio an Projekten als auch die Playlistübersicht noch nicht fertig. Für Letzteres muss zunächst die [Tracktor-API](https://github.com/tracktor-one/tracktor "Externer Link: tracktor Repository auf Github"){:target="_blank"} fertiggestellt und anschließend der Frontend-Part entwickelt werden.
 
 Es gibt also noch einiges zu tun, bis die Seite so ist, wie ich sie mir wünsche.
