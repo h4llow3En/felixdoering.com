@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bitte sag mir warum
+title: Tell me why
 date: 2015-05-05 12:03:00
 description: description.tell_me_why
 show_social: true
