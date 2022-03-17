@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Die Sache mit der Search Engine Optimization (SEO)
+title: Die Sache mit der Search Engine Optimization
 date:   2022-02-27 17:45:00
 images:
   - file: posts/seo/pagespeed.png

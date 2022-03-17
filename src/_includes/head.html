@@ -5,7 +5,7 @@
 
   <title>Felix Döring - {% if include.title %}{{ include.title }}{% else %}{% t page.title %}{% endif %}</title>
   <meta name="description"
-    content="{% if page.description %}{% t page.description %}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160, '...'  }}{% else %}{% t description.page %}{% endif %}">
+    content="{% if page.description %}{% t page.description %}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 150, '...'  }}{% else %}{% t description.page %}{% endif %}">
   <meta name="keywords" content="felix,döring,felix döring,developer,full stack,dresden{% if page.tags != "" %},{{ page.tags }}{% endif %}">
 
   <!-- Open Graph tags -->
