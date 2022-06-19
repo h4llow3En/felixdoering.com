@@ -10,7 +10,7 @@ tags: rust, tdo, libc
 ---
 
 It felt like a long time ago when Felix and I built the terminal todo list [tdo](http://tdolist.de "External Link: Projekt webseite of tdolist"){:target="_blank"}. But now there was time to build something new.  
-We started to rewrite this original Pyhon based project in Rust a while ago, but in between I had no time to practice this language at all. So I tried to teach myself again on a different project. A notification service should be good. I want to get a mail with all my tasks.
+We started to rewrite this original Python based project in Rust a while ago, but in between I had no time to practice this language at all. So I tried to teach myself again on a different project. A notification service should be good. I want to get a mail with all my tasks.
 
 This idea was the beginning of [tdo-notify](https://github.com/tdolist/tdo-notify "External Link: tdo-notify repository on Github"){:target="_blank"} a tool that can be run in a cronjob to remind you every day.
 Because of the similarity between Rust and Swift it was a bit tricky to remember the correct syntax and I had some problems with the borrow checker.
