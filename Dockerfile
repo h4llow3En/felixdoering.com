@@ -1,4 +1,4 @@
-FROM jekyll/builder:4.2.2 as builder
+FROM jekyll/builder:4.2.0 as builder
 
 COPY src /build
 WORKDIR /build
