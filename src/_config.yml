@@ -83,3 +83,5 @@ plugins:
   - jekyll-assets
   - jekyll-multiple-languages-plugin
   - jekyll-email-protect
+  - liquid_reading_time
+  - liquid_pluralize

@@ -12,9 +12,9 @@ layout: compress
     <div class="content">
       <div class="page{% if page.images %} two-col{% endif %}">
         <p class="published">{% t published_at %} {% if site.lang != "en" %}
-          {{ page.date | date: "%d.%m.%Y" }}
+          {{ page.date | date: "%d.%m.%Y" }} - {% t est_readtime %}: {{ content | reading_time | pluralize: "Minute", "Minuten" }}
           {% else %}
-          {{ page.date | date_to_string }}
+          {{ page.date | date_to_string }} - {% t est_readtime %}: {{ content | reading_time | pluralize: "minute" }}
         {% endif %}</p>
         {{ content }}
       </div>

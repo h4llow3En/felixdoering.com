@@ -37,6 +37,8 @@ link_extern: "External link:"
 
 published_at: Published at
 
+est_readtime: Estimated reading time
+
 images:
   new_logo: new logo based on my nickname h4llow3En
   old_main: Old main page

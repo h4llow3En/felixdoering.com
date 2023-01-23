@@ -34,6 +34,8 @@ link_extern: "Externer Link:"
 
 published_at: Veröffentlicht am
 
+est_readtime: Vorausichtliche Lesezeit
+
 images:
   new_logo: Neues Logo basierend auf meinem Nickname h4llow3En
   old_main: Die alte Hauptseite
