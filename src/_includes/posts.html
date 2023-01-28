@@ -6,7 +6,7 @@
       <nobr><span class="post-date">({% if site.lang != "en" %}
           {{ post.date | date: "%d.%m.%Y" }} - {{ post.content | reading_time | pluralize: "Minute", "Minuten" }} Lesezeit
           {% else %}
-          {{ post.date | date_to_string }} - {{ post.content | reading_time | pluralize: "minute" }} reading time
+          {{ post.date | date_to_string }} - {{ post.content | reading_time | pluralize: "minute" }} read
           {% endif %})</span></nobr><br>
       <span class="post-teaser">{{ post.teaser | truncate: 300, '...' }}</span> &nbsp;&nbsp;>&nbsp;{% t continue %}
     </article>
