@@ -29,7 +29,7 @@ GEM
     autoprefixer-rails (10.4.7.0)
       execjs (~> 2)
     colorator (1.1.0)
-    concurrent-ruby (1.1.10)
+    concurrent-ruby (1.2.0)
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
@@ -120,7 +120,7 @@ GEM
     terminal-table (2.0.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
     thread_safe (0.3.6)
-    tzinfo (1.2.10)
+    tzinfo (1.2.11)
       thread_safe (~> 0.1)
     tzinfo-data (1.2022.7)
       tzinfo (>= 1.0.0)
@@ -151,4 +151,4 @@ DEPENDENCIES
   wdm (~> 0.1.1)
 
 BUNDLED WITH
-   2.4.5
+   2.3.12
